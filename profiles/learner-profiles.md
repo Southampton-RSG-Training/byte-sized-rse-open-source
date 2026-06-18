@@ -1,5 +1,5 @@
 ---
-title: FIXME
+title: Learner Profile
 ---
 
-This is a placeholder file. Please add content here. 
+This course assumes some familiarity with Git and GitHub.
