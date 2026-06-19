@@ -4,7 +4,7 @@ teaching: 15
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - Should I contribute to an open source project?
 
@@ -108,5 +108,25 @@ Make sure that if you want to contribute to a project you follow their guideline
 
 :::::::::::::::::::::::::
 
+## Alternatives to Contributing to a Project
 
+Sometimes a contribution to a project is not the right way to share the work that you have done, and maintaining your own fork may be a substantial effort.  In these cases, particularly for open source libraries, it may make more sense to create an extension or "plug-in" for the open source library in your own open source project.
+
+For example, a general-purpose machine learning library is likely to have a selection of the most general and well-proven algorithms, and won't likely accept new algorithms unless they also fall into the category.  If you have developed a new technique as part of your research, then it is unlikely that a contribution with that algorithm would be accepted.
+
+In this case, if you were to create your own library which depends on an the general purpose library, implementing your algorithm but using its conventions, using its tools, and following its API, then your library is compatibile with the general-purpose library and familiar to its users.  If you design things well, you may be able to make your algorithm a drop-in replacement for the general-purpose algorithms.
+
+Working in this sort of way, you are more likely to get users who are familiar with the open source library you are working with to use your code. And if your algorithm gains popularity and adoption then it will be easier to integrate it into the project you are using later on.
+
+
+::::::::::::::::: keypoints
+
+- be mindful of the constraints that face developers of open source software
+- be clear to yourself on why you want to contribute to an open source project
+- follow the guidelines and conventions of any project that you are planning to work with
+- to make a contribution: make a fork of the project, clone it, and work on a branch, then push the branch and make a pull request
+- understand that your vision and the projects visions may not agree, and that contributions may not be accepted
+- consider alternatives to directo contribution to a project
+
+:::::::::::::::::::::::::::
 

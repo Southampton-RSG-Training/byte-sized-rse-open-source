@@ -4,16 +4,18 @@ teaching: 15
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - Should I open source my code?
-- 
+- What do I need to do for a minimal open source release
+- What is involved in a more intentional open source release
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand the different types of open source licenses.
+- Understand what is involved in successful open source releases.
+- Be able to determine whether the effort matches the return that you hope to get from your work.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -43,7 +45,7 @@ However, you may wish to release open source code in a more substantial, re-usab
 
 The key thing you need to realise is the following:
 
-| All code that is not abandoned incurs a cost just by existing.
+> All code that is not abandoned incurs a cost just by existing.
 
 Bugs are discovered. Dependencies change. Operating systems evolve. New platforms emerge. To keep your code current and relevant (sometimes referred to as avoiding 'bit-rot') there is a constant, low-level maintenance effort required.  The more code, the larger te effort.  You can always stop development, and that's a valid choice if the software is no longer achieving your goals, but it will get harder and harder for people to use your software as soon as you stop.  If you know you will not have the time available to do maintenance it is likely not worth the effort of anything more than a minimal open sourcing effort.
 
@@ -76,3 +78,13 @@ With users comes more work: they will try to use your software in ways that you 
 A venue for discussions outside of your issue tracking system may also be useful: a mailing list, discussion board, or wiki may help once your user base grows to more than a few people.
 
 Community also means things like codes of conduct, contribution guides, contributor agreements, and similar.
+
+::::::::::::::::: keypoints
+
+- if you decide to open source a project, be mindful of the effort requird to do it well
+- you should follow software development best practices with open source software
+- documentation is important for success
+- if your are successful, you will be managing a community, and all that goes with that
+
+:::::::::::::::::::::::::::
+

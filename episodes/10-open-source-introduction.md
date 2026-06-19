@@ -4,18 +4,20 @@ teaching: 15
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - What is open source software?
 - How can you use open source software in your projects?
-- 
+- What are your legal obligations when you work with open source software?
+- How do you assess the suitability of open source software for your project?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
+- Understand the legal protections for open source software.
 - Understand the different types of open source licenses.
-
+- Be able to understand what makes an open source project easy to work with.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -23,7 +25,7 @@ exercises: 0
 
 Open Source has transformed the research world over the last quarter century: the chances are any modern research software project relies in critical ways on open source software, whether it is Linux, SLURM, WebEngine, React, Python, R, NumPy, or PyTorch (or all of them!) or any of a vast array of other projects, big and small.
 
-The power of open source is that it allows many different people and groups to contribute, debug and improve a piece of software, adapting it to changing needs and use-cases as time goes on.  Each user stands upon the shoulders of those who have contributed, and together the community produces something more substantial than any one person could possibly do themselves.
+The power of open source is that it allows many different people and groups to contribute, expand, debug and improve a piece of software, adapting it to changing needs and use-cases as time goes on.  Each user stands upon the shoulders of those who have contributed, and together the community produces something more substantial than any one person could possibly do themselves.
 
 In most cases you will simply be a user of the open source software: if the software solves your problem adequately, you may never have the need or desire to contribute to the software you use.  But sometimes you run into a bug or a gap in functionality that means that the software can't do exactly what you need.
 
@@ -35,7 +37,7 @@ In these cases you need to have an understanding of the licenses that protect op
 
 ## How Open Source Works
 
-A common perception is that open source software is "free" in the sense that it doesn't cost anything to use, but also in the sense that you are able to use it however you want.  However most open source software is not *completely* free to use. 
+A common perception is that open source software is "free" in the sense that it doesn't cost anything to use, but also in the sense that you are able to use it however you want.  However most open source software is not *completely* free to use.
 
 Software source is considered a creative work, and so is protected by copyright unless it has been placed in the public domain by the author or by copyright expiring.  By default you can't just copy the source code of a program and use it yourself.  So open source software usually comes with some sort of *license* which describes how you can and can't use it.  These licenses may be simple or complex, and may or may not place obligations on you if you use the source in certain ways.
 
@@ -142,12 +144,13 @@ If you are planning to incorporate open source software in your work, you should
 
 Key things you should consider include:
 
-- licensing: is the license compatible with how you intend to use it? For example GPL licensed code may not be suitable for use with a non-GPL licensed project.
-- fitness for purpose: does the software actually solve your problem, is it compatible with your operating system and environment. Some experimentation may be needed.
-- documentation: is there good documentation of how to use the software. If the codebase is small this may not be a major issue, but documentation is always helpful.
-- code quality: is the code clean and well-designed. This is one of the advantages of open source software: you can always look at the code.  Are their tests, does the code have a consistent style, do the design choices make sense to you.
-- community: is there a community of users of the software? Is development active on the software or has it been abandoned?
-- ease of use: can you easily install it and its dependencies? Can you build it and package it? Can it be used as a library rather than a stand-alone application? Is its interface complicated?
+- **fitness for purpose**: does the software actually solve your problem, is it compatible with your operating system and environment. Some experimentation may be needed.
+- **licensing**: is the license compatible with how you intend to use it? For example GPL licensed code may not be suitable for use with a non-GPL licensed project.
+- **maturity**: is the project new and still under active development, or is it mature and mainly having mainetenance and bugfixing work? Mature projects are generally easier to work with and will likely have fewer bugs, but new projects are more likely to accept help and contributions of new features.
+- **documentation**: is there good documentation of how to use the software. If the codebase is small this may not be a major issue, but documentation is always helpful.
+- **code quality**: is the code clean and well-designed. This is one of the advantages of open source software: you can always look at the code.  Are their tests, does the code have a consistent style, do the design choices make sense to you.
+- **community**: is there a community of users of the software? Is development active on the software or has it been abandoned?
+- **ease of use**: can you easily install it and its dependencies? Can you build it and package it? Can it be used as a library rather than a stand-alone application? Is its interface complicated?
 
 Other than licensing and fitness of purpose, none of these things are deal-breakers. For example, abandoned code may need a little effort to get it working again, but if it fits your need perfectly then it is likely worth that effort.
 
@@ -219,11 +222,13 @@ Note that if the code you copied had been GPL licensed you might have needed to 
 
 Open source codebases have been extensively used for training LLMs - this is a large part of the reason that they can produce working code.  However there are some legal questions which are still open at the time of writing:
 
-- can code generated by an LLM be copyrighted (and therefore protected by licenses). In the UK the answer is yes, but the US copyright office guidance is that there should be significant human creative input (more than a single prompt).
+- can code generated by an LLM be copyrighted (and therefore protected by licenses)? In the UK the answer is yes, but the US copyright office guidance is that there should be significant human creative input (more than a single prompt).
 
-- an LLM trained on copyrighted material is likely a derived work.  It is currently an open question about whether training an LLM on copyrighted source code falls under fair use, or whether any licenses on the software also apply to the LLM.  The Free Software Foundation hsa indicated that they believe that the GPL should apply to LLMs trained on GPL licensed code and that the model weights and related code should be open sourced under the GPL.  This has not been tested in court.
+- an LLM trained on copyrighted material is likely a derived work.  It is currently an open question about whether training an LLM on copyrighted source code falls under fair use, or whether any licenses on the software also apply to the LLM.  The Free Software Foundation has indicated that [they believe that the copyleft licenses should apply to LLMs trained on copyleft licensed code](https://www.fsf.org/blogs/licensing/2026-anthropic-settlement) and that the model weights and related code should be open-sourced with appropiate licenses.  This has not been tested in court.
 
-Code generated by an LLM trained on licensed code is generally considered not to be bound by the licenses, just as binaries generated by a compiler are generally not bound by the compiler's license.
+- LLMs can generate copies of code used in training models when prompted appropriately.  If the copied code is distinctive and substantial enough then that code may be considered a derived work of the original code and subject to copyright and licensing.  At the time of writing courts have ruled that all examples of generated code that have been brought before them have been sufficiently different to not be copyright infringement.  Neverthless, this is a risk which should be considered when taining on open source code.
+
+If you follow the requirements of the licenses of any code you train on (for example, including license text and making available any copyleft source files you may have used), just as if you would in a regular software project, then your work should be covered by the licensing.
 
 :::::::::::::::::::::::::
 
