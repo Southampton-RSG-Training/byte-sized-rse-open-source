@@ -1,18 +1,19 @@
 ---
-title: "Contributing to Open Source"
+title: "Working with GitHub"
 teaching: 15
 exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- Should I contribute to an open source project?
+- How do I contribute to an open source project hosted on GitHub?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- ...
+- Learn how to fork an open source repository.
+- Learn how to open a pull request using a branch on a forked repository.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
