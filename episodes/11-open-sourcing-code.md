@@ -4,16 +4,18 @@ teaching: 15
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - Should I open source my code?
-- 
+- What do I need to do for a minimal open source release
+- What is involved in a more intentional open source release
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand the different types of open source licenses.
+- Understand what is involved in successful open source releases.
+- Be able to determine whether the effort matches the return that you hope to get from your work.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -23,7 +25,7 @@ As a researcher there are many reasons to open-source your code. In particular, 
 
 ![Array programming with NumPy paper in Nature](numpy_nature.png)
 
-To successfully release open source code takes effort and perserverence, and even with that there is no guarantee that your project will catch the attention of a community or that recognition of the impact will come quickly.  The NumPy paper in Nature was published 15 years after NumPy was first released, and 25 years after Numeric, the predecsessor of NumPy, was released; and for many of the authors NumPy was a significant, unpaid and unacknowledged part of their work for years.
+To successfully release open source code takes effort and perseverance, and even with that there is no guarantee that your project will catch the attention of a community or that recognition of the impact will come quickly.  The NumPy paper in Nature was published 15 years after NumPy was first released, and 25 years after Numeric, the predecessor of NumPy, was released; and for many of the authors NumPy was a significant, unpaid and unacknowledged part of their work for years.
 
 So if you want to open source your code, you should be very clear-headed about the reasons you are doing it, put in effort commensurate to your goals, and hope that fortune smiles on you.
 
@@ -41,9 +43,9 @@ However, you may wish to release open source code in a more substantial, re-usab
 
 ### Maintenance
 
-The key thing you need to realize is the following:
+The key thing you need to realise is the following:
 
-| All code that is not abandoned incurs a cost just by existing.
+> All code that is not abandoned incurs a cost just by existing.
 
 Bugs are discovered. Dependencies change. Operating systems evolve. New platforms emerge. To keep your code current and relevant (sometimes referred to as avoiding 'bit-rot') there is a constant, low-level maintenance effort required.  The more code, the larger te effort.  You can always stop development, and that's a valid choice if the software is no longer achieving your goals, but it will get harder and harder for people to use your software as soon as you stop.  If you know you will not have the time available to do maintenance it is likely not worth the effort of anything more than a minimal open sourcing effort.
 
@@ -63,7 +65,7 @@ Once you have working, good quality software with tests, you need to start focus
 
 The minimum is a "README" file, and for small packages this may be enough.  For larger packages you will want to write documentation with more depth, and for libraries you probably want to also include auto-generated API documentation as a reference.
 
-The documentation should include a description of what the project's goals are, what it does, how to install it, what its dependencies are, and examples of how to use it.  Documentation should be under source-control, and should be able to be automatically built and deployed with minimum effort (ideally as part of CI).  Github and similar systems provide the ability to host a web site associated with a project, and aften provide tools for automatic deployment. Other options include ReadTheDocs and self-hosting.
+The documentation should include a description of what the project's goals are, what it does, how to install it, what its dependencies are, and examples of how to use it.  Documentation should be under source-control, and should be able to be automatically built and deployed with minimum effort (ideally as part of CI).  Github and similar systems provide the ability to host a web site associated with a project, and often provide tools for automatic deployment. Other options include ReadTheDocs and self-hosting.
 
 ### Building Awareness and Community
 
@@ -76,3 +78,13 @@ With users comes more work: they will try to use your software in ways that you 
 A venue for discussions outside of your issue tracking system may also be useful: a mailing list, discussion board, or wiki may help once your user base grows to more than a few people.
 
 Community also means things like codes of conduct, contribution guides, contributor agreements, and similar.
+
+::::::::::::::::: keypoints
+
+- if you decide to open source a project, be mindful of the effort requird to do it well
+- you should follow software development best practices with open source software
+- documentation is important for success
+- if your are successful, you will be managing a community, and all that goes with that
+
+:::::::::::::::::::::::::::
+

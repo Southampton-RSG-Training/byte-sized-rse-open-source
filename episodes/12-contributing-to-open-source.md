@@ -4,7 +4,7 @@ teaching: 15
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+:::::::::::::::::::::::::::::::::::::: questions
 
 - Should I contribute to an open source project?
 
@@ -18,7 +18,7 @@ exercises: 0
 
 # Contributing to Open Source
 
-In a very real sense Open Souce Software is a gift from the developers: they are giving something of value with no expectation of direct return.
+In a very real sense Open Source Software is a gift from the developers: they are giving something of value with no expectation of direct return.
 
 It is important when thinking about contributing to open source projects to keep this in mind: you are asking for their time and attention. Most people who are maintainers of open source software are really happy to have other people helping out, but for most it is an unpaid, part-time thing that they do. Some may even be willing to help new contributors come up to speed on the project. But time they spend working with you is time that they are not spending on other things, so be mindful and understanding of that.
 
@@ -36,11 +36,13 @@ The author of this Byte-Sized course was working on integrating IPython into a G
 
 The author forked IPython and made the following one-line fix to the documentation:
 
-![IPython Documentation Fix](ipython_doc_bug.md)
+![IPython Documentation Fix](ipython_doc_bug.png)
 
 and opened this [IPython pull request](https://github.com/ipython/ipython/pull/2713). It was quickly accepted. After 15 years, the [fix is still in the IPython documentation](https://github.com/ipython/ipython/blob/fdbdf1c699e80f76a71e3dc5b46a3d164939b3f2/docs/source/config/custommagics.rst?plain=1#L67), although updated for Python 3 and other changes over the years.
 
-Writing the fix took less than half an hour, but likely saved anyone who was wanting to learn from that example much more than that.  The take-away is that even tiny contributions have value and can have lasting impact.
+Writing the fix took less than half an hour, but likely saved anyone who was wanting to learn from that example much more than that.  This is the only contribution the author has made to IPython.
+
+The take-away is that even tiny contributions have value and can have lasting impact: a small thing that makes the world a little better.
 
 :::::::::::::::::::::::::
 
@@ -56,8 +58,8 @@ The most basic contribution you can make is opening an issue on the project's is
 
 Before opening an issue, search both the open *and* closed issues to see if there is already an open issue for what you want.  If you are lucky the issue is already resolved and may simply be waiting for a release of the software; or someone has already done the work of reporting the issue.  If you are unlucky the issue may be closed as something that won't be fixed, in which case you should carefully read the reasons and respect the decisions of the maintainers.
 
-If there is an appropriate issue open, you may want to add additonal relevant information. For example:
-- for a bug, reporting that it happens on another platform, or under different circumstances, or providing mroe detail about the problem
+If there is an appropriate issue open, you may want to add additional relevant information. For example:
+- for a bug, reporting that it happens on another platform, or under different circumstances, or providing more detail about the problem
 - for a feature, adding your use-case or need if it is different from those already being discussed
 
 If there isn't an open issue, you can open one, following the guidance of the contribution guide and any issue templates the project might have.  Your issue should be clearly written, describing precisely what the problem is, and what you have tried to fix it.  If you are reporting a bug you should describe your platform and environment, how you can trigger the bug, and any error messages or log files generated.  For feature requests you should describe what you are trying to do at a high level, how you would like the new feature to work, examples of usage, and *possibly* thoughts about implementation if you have sufficient knowledge.
@@ -106,5 +108,25 @@ Make sure that if you want to contribute to a project you follow their guideline
 
 :::::::::::::::::::::::::
 
+## Alternatives to Contributing to a Project
 
+Sometimes a contribution to a project is not the right way to share the work that you have done, and maintaining your own fork may be a substantial effort.  In these cases, particularly for open source libraries, it may make more sense to create an extension or "plug-in" for the open source library in your own open source project.
+
+For example, a general-purpose machine learning library is likely to have a selection of the most general and well-proven algorithms, and won't likely accept new algorithms unless they also fall into the category.  If you have developed a new technique as part of your research, then it is unlikely that a contribution with that algorithm would be accepted.
+
+In this case, if you were to create your own library which depends on an the general purpose library, implementing your algorithm but using its conventions, using its tools, and following its API, then your library is compatibile with the general-purpose library and familiar to its users.  If you design things well, you may be able to make your algorithm a drop-in replacement for the general-purpose algorithms.
+
+Working in this sort of way, you are more likely to get users who are familiar with the open source library you are working with to use your code. And if your algorithm gains popularity and adoption then it will be easier to integrate it into the project you are using later on.
+
+
+::::::::::::::::: keypoints
+
+- be mindful of the constraints that face developers of open source software
+- be clear to yourself on why you want to contribute to an open source project
+- follow the guidelines and conventions of any project that you are planning to work with
+- to make a contribution: make a fork of the project, clone it, and work on a branch, then push the branch and make a pull request
+- understand that your vision and the projects visions may not agree, and that contributions may not be accepted
+- consider alternatives to directo contribution to a project
+
+:::::::::::::::::::::::::::
 
