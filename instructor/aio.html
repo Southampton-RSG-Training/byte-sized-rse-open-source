@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Lesson Title: All in One View</title>
+<title>Byte-Sized RSE: Open Source: All in One View</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="../assets/themetoggle.js"></script><link rel="stylesheet" type="text/css" href="../assets/styles.css">
 <script src="../assets/scripts.js" type="text/javascript"></script><!-- mathjax --><!-- NOTE: https://docs.mathjax.org/en/latest/output/mathml.html#mathml-support --><!-- Changes from V2 to V4: https://mathjax.github.io/MathJax-demos-web/convert-configuration/convert-configuration.html
@@ -99,7 +99,7 @@
       <img class="small-logo" alt="Lesson Description" src="../assets/images/incubator-logo-sm.svg">
 </div>
     <div class="lesson-title-md">
-      Lesson Title
+      Byte-Sized RSE: Open Source
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -110,7 +110,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Lesson Title
+            Byte-Sized RSE: Open Source
           </span>
         </li>
         <li class="nav-item">
@@ -237,7 +237,43 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Using Markdown</a>
+        <a href="10-open-source-introduction.html">1. Introduction</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="11-open-sourcing-code.html">2. Open Sourcing Your Code</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="12-contributing-to-open-source.html">3. Contributing to Open Source</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="13-working-with-github.html">4. Working with GitHub</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -301,12 +337,12 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>All in One View</h1>
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Using Markdown</a></p>
+<section id="aio-10-open-source-introduction"><p>Content from <a href="10-open-source-introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2026-06-16 |
+<p>Last updated on 2026-06-22 |
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+        <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/10-open-source-introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -318,8 +354,12 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do you write a lesson using Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+<li>What is open source software?</li>
+<li>How can you use open source software in your projects?</li>
+<li>What are your legal obligations when you work with open source
+software?</li>
+<li>How do you assess the suitability of open source software for your
+project?</li>
 </ul>
 </div>
 </div>
@@ -329,95 +369,361 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to use markdown with The Carpentries Workbench</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<li>Understand the legal protections for open source software.</li>
+<li>Understand the different types of open source licenses.</li>
+<li>Be able to understand what makes an open source project easy to work
+with.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<div class="section level1">
+<h1 id="open-source-software">Open Source Software<a class="anchor" aria-label="anchor" href="#open-source-software"></a>
+</h1>
+<p>Open Source has transformed the research world over the last quarter
+century: the chances are any modern research software project relies in
+critical ways on open source software, whether it is Linux, SLURM,
+WebEngine, React, Python, R, NumPy, or PyTorch (or all of them!) or any
+of a vast array of other projects, big and small.</p>
+<p>The power of open source is that it allows many different people and
+groups to contribute, expand, debug and improve a piece of software,
+adapting it to changing needs and use-cases as time goes on. Each user
+stands upon the shoulders of those who have contributed, and together
+the community produces something more substantial than any one person
+could possibly do themselves.</p>
+<p>In most cases you will simply be a user of the open source software:
+if the software solves your problem adequately, you may never have the
+need or desire to contribute to the software you use. But sometimes you
+run into a bug or a gap in functionality that means that the software
+can’t do exactly what you need.</p>
+<p>The good news is that open source software is just that: you can get
+the source code for the software with a little knowledge and some tools
+you can fix that bug or add that missing piece of functionality. And
+that often can be the end of the story: you’ve solved your problem and
+you can move on.</p>
+<p>But that may not be the end of the story. Perhaps you want to use an
+open source library in software that you are distributing. Perhaps you
+think your changes might be valuable other people with the same problems
+that you’ve run into. In these cases you may need to publish your code,
+and in some cases you might want to work with the community to
+incorporate your changes back into the original software. Or maybe you
+have code that you want to open source yourself.</p>
+<p>In these cases you need to have an understanding of the licenses that
+protect open source code, the way that open source communities work, and
+the mechanics of contributing to someone else’s project.</p>
+<div class="section level2">
+<h2 id="how-open-source-works">How Open Source Works<a class="anchor" aria-label="anchor" href="#how-open-source-works"></a>
 </h2>
-<hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal">
+<p>A common perception is that open source software is “free” in the
+sense that it doesn’t cost anything to use, but also in the sense that
+you are able to use it however you want. However most open source
+software is not <em>completely</em> free to use.</p>
+<p>Software source is considered a creative work, and so is protected by
+copyright unless it has been placed in the public domain by the author
+or by copyright expiring. By default you can’t just copy the source code
+of a program and use it yourself. So open source software usually comes
+with some sort of <em>license</em> which describes how you can and can’t
+use it. These licenses may be simple or complex, and may or may not
+place obligations on you if you use the source in certain ways.</p>
+<p>The author or authors of a piece of software usually still control
+the copyright, and so they can choose to license the software in
+different ways and under different terms if they want to. For example it
+is somewhat common for companies to open source their code under a
+restrictive license and offer a commercial license with less restrictive
+terms.</p>
+<p>This course is going to mostly concentrate on software and software
+licenses, but there are notions of open source for other types of
+creative work, often using the Creative Commons licenses, which have
+many similarities to open source software licenses. For example, this
+course itself is open source under a Creative Commons CC-BY 4.0
+license.</p>
+<div id="patents-and-trademarks" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="patents-and-trademarks" class="callout-inner">
+<h3 class="callout-title">Patents and Trademarks</h3>
+<div class="callout-content">
+<p>Copyright isn’t the only type of intellectual property that may apply
+to software.</p>
+<p><em>Patents</em> can apply to software, particularly if it is part of
+a bigger system, and may restrict the ways that a piece of software can
+be used without separate licensing. Patents have a significantly shorter
+duration than copyright. Some open source licenses, such as the Apache
+License 2.0 and GPL 3, have clauses regarding patents.</p>
+<p><em>Trademarks</em> may apply to open source software and prominent
+open source projects may have trademark protection. This may affect how
+you can present your relationship to the software, how you use logos,
+and so on. You may need to take some care when naming your project that
+it does not conflict with prominent project names.</p>
+<p>If you have serious concerns about the intellectual property
+implications of the way that you want to use a piece of software you
+should consult with a lawyer.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="open-source-licenses">Open Source Licenses<a class="anchor" aria-label="anchor" href="#open-source-licenses"></a>
+</h2>
+<p>There are many different open source licenses in use in the thousands
+upon thousands of open source projects. The <a href="https://opensource.org/licenses" class="external-link">Open Source Initiative has a list
+of licenses</a> that it considers to be “open source”, but even then
+there are open source licenses which don’t match its definitions which
+may be useful for research code (for example, licenses which restrict
+commercial use).</p>
+<p>But in general license fall into a few different general categories
+in terms of the <em>requirements</em> they place on use:</p>
+<ul>
 <li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
+<strong>attribution requirements</strong>: a requirement to
+acknowledge the use of the code, often by including a license file.
+These sorts of requirements are sometimes called “permissive”.</li>
 <li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
+<strong>source sharing requirements</strong>: a requirement to
+distribute or link to source code, usually under the same license as the
+code. These sorts of requirements are often called “copyleft” or
+“viral”.</li>
 <li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
-<div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
+<strong>usage restrictions</strong>: some limitation on the ways the
+code may be used, frequently things like restricting commercial use, or
+use in ways that they authors find unethical.</li>
+</ul>
+<p>In general permissive licenses allow the software to be used as part
+of a closed source or commercial product. Copyleft licenses usually
+prevent use in closed source software.</p>
+<p>And terms of the license may take effect in a number of different
+ways, such as:</p>
+<ul>
+<li>
+<em>distributing</em> the code, whether source or binary, a
+stand-alone program, library, or in embedded hardware</li>
+<li>
+<em>running the code on a server</em> usable by others</li>
+<li>
+<em>using</em> the code for particular purposes</li>
+</ul>
+<p>Most licenses are fairly easy to read, and for the most commonly used
+licenses there are often guides that give and idea of the
+<em>intent</em> of the license. Even if you are within the letter of the
+license in what you are doing, breaking the intent of the license may
+bring negative attention from the people whose work you depend on.</p>
+<p>Common examples of licenses are:</p>
+<ul>
+<li>
+<a href="https://en.wikipedia.org/wiki/BSD_licenses" class="external-link"><strong>BSD</strong></a>:
+there are several variations on this, originally used by the “Berkeley
+Software Distribution” open source Unix. It is used by Python and a
+large number of Python packages. It is a permissive license.</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/MIT_License" class="external-link"><strong>MIT</strong></a>:
+a license originally used by networking software released by the
+Massachusetts Institute of Technology. It is widely used in Javascript
+libraries. It is a permissive license.</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/Apache_License" class="external-link"><strong>Apache</strong></a>:
+a license originally used by the Apache web server. It is widely used
+and is the third most popular open source license. It is generally a
+permissive license.</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License" class="external-link"><strong>LGPL</strong></a>:
+this is a license which allows permissive use when distributed in
+unmodified form, but requires publication of modifications. As a result
+it can be used in closed source and commercial software.</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/GNU_General_Public_License" class="external-link"><strong>GPL</strong></a>:
+this is the original copyleft license, originally used by the Free
+Software Foundation for the GNU unix tools. The GPL version 2 is the
+license used by Linux and many other prominent projects. It can be used
+in servers without sharing code, or called as a separate OS process, but
+otherwise requires distribution of software which <em>links</em> against
+it to also use the GPL license.</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/GNU_Affero_General_Public_License" class="external-link"><strong>AGPL</strong></a>:
+this is a variant of the GPL that requires that software on servers that
+use it provide source and installation instructions for the entire
+server-side system. The <a href="https://en.wikipedia.org/wiki/Server_Side_Public_License" class="external-link">Server-Side
+Public License (SSPL)</a> is a similar license used by some projects.
+ElasticSearch, MongoDB and Redis are major projects which use this type
+of license.</li>
+</ul>
+<div id="license-example" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="license-example" class="callout-inner">
+<h3 class="callout-title">License Example</h3>
+<div class="callout-content">
+<p>The NumPy license is a permissive “3-clause BSD License”:</p>
+<pre><code>Copyright (c) 2005-2025, NumPy Developers.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above
+       copyright notice, this list of conditions and the following
+       disclaimer in the documentation and/or other materials provided
+       with the distribution.
+
+    * Neither the name of the NumPy Developers nor the names of any
+       contributors may be used to endorse or promote products derived
+       from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</code></pre>
+<p>The license doesn’t promise anything to the users of the code, but
+does require including the license text when redistributing the
+software, whether in source or binary form.</p>
 </div>
 </div>
 </div>
+<div class="section level3">
+<h3 id="licenses-and-industry">Licenses and Industry<a class="anchor" aria-label="anchor" href="#licenses-and-industry"></a>
+</h3>
+<p>In academia liciensing is rarely a problem, but in industry, or when
+thinking of commercialisation opportunities, more care needs to be
+taken.</p>
+<p>When working on projects with industry partners, you may find that
+they can be very wary about the use of software with copyleft-style open
+source licenses, particularly when it comes to libraries. While they are
+usually fine to use within an organisation, there is the risk that if
+software using them is given to a third party (such as a customer,
+contractor or partner) it may require giving them not just the source
+for the library, but also for proprietary code that uses the
+library.</p>
+<p>On the other hand, when considering commercialisation, some companies
+will dual-license their code: anyone can use the code if they agree to a
+copyleft license (which requires them to share any proprietary code),
+but they also offer a more standard paid commercial license without the
+copyleft provisions. This permits them to build a community around their
+software, but also to earn income from other commercial users.</p>
 </div>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
+</div>
+<div class="section level2">
+<h2 id="using-open-source">Using Open Source<a class="anchor" aria-label="anchor" href="#using-open-source"></a>
+</h2>
+<p>If you are planning to incorporate open source software in your work,
+you should spend at least a little time assessing whether it is suitable
+for the purposes that you have in mind for it.</p>
+<p>Key things you should consider include:</p>
+<ul>
+<li>
+<strong>fitness for purpose</strong>: does the software actually
+solve your problem, is it compatible with your operating system and
+environment. Some experimentation may be needed.</li>
+<li>
+<strong>licensing</strong>: is the license compatible with how you
+intend to use it? For example GPL licensed code may not be suitable for
+use with a non-GPL licensed project.</li>
+<li>
+<strong>maturity</strong>: is the project new and still under active
+development, or is it mature and mainly having mainetenance and
+bugfixing work? Mature projects are generally easier to work with and
+will likely have fewer bugs, but new projects are more likely to accept
+help and contributions of new features.</li>
+<li>
+<strong>documentation</strong>: is there good documentation of how
+to use the software. If the codebase is small this may not be a major
+issue, but documentation is always helpful.</li>
+<li>
+<strong>code quality</strong>: is the code clean and well-designed.
+This is one of the advantages of open source software: you can always
+look at the code. Are their tests, does the code have a consistent
+style, do the design choices make sense to you.</li>
+<li>
+<strong>community</strong>: is there a community of users of the
+software? Is development active on the software or has it been
+abandoned?</li>
+<li>
+<strong>ease of use</strong>: can you easily install it and its
+dependencies? Can you build it and package it? Can it be used as a
+library rather than a stand-alone application? Is its interface
+complicated?</li>
+</ul>
+<p>Other than licensing and fitness of purpose, none of these things are
+deal-breakers. For example, abandoned code may need a little effort to
+get it working again, but if it fits your need perfectly then it is
+likely worth that effort.</p>
+<p>When you use open source software in your projects, ensure that you
+adhere to any license requirements it imposes. In many cases it won’t be
+any. For example if you are writing a Python library with dependencies
+and the user has to install everything using a package manager like
+<code>pip</code> then you are not “distributing” the dependencies, PyPI
+is.</p>
+<p>But if you are distributing a built binary program, application, or
+hardware, then even with permissive licensing you may have to at least
+publish acknowledgement in the form required by the license.</p>
+<p>Additionally, no matter what the license, you should follow citation
+guidelines for software: look for <code>CITATION.cff</code> files or
+<code>DOI</code> references and use them appropriately.</p>
+<p>Here are some scenarios to think about:</p>
+<div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
+<p>Your project involves building many robots to be given for free to
+schools to teach computer science. The robots run linux on a single
+board computer (for example, a Raspberry Pi). What are your obligations
+under the Linux GPL license?</p>
 </div>
 </div>
 </div>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
+<p>You are distributing Linux in a binary form (likely along with may
+other GPL programs). You need to include the copyright notice and
+disclaimer from the GPL code you are using, as well as information about
+how to get the linux source code. If you haven’t modified the source, a
+link to the third party source you used (likely from the manufacturer of
+the SBC) is sufficient and should have been provided to you from
+wherever you got Linux from.</p>
+<p>It doesn’t matter that your project is non-commercial, but it may
+matter who <em>owns</em> the robots.</p>
+<p>Any custom application code that you write for the robots is
+unaffected by the GPL.</p>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
+<div id="challenge2" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?</h3>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
-
+<p>You write a mobile application to help with data collection in the
+field. The only users are within your research group. The application
+uses a BSD licensed library in a critical way. How do you need to
+acknowledge the use of the library?</p>
 </div>
 </div>
 </div>
@@ -426,44 +732,133 @@ challenge blocks?</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
+<p>You are using the BSD licensed code internally within your
+organization, so you are not distributing it and so you do not need to
+include the BSD license with your application.</p>
+<p>However you should cite the library in any relevant papers about your
+project.</p>
 </div>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-</h2>
-<hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+<div id="challenge3" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>You write a Python library which has a dependency on a library
+licensed under the GPL. Users will normally install your software using
+a package manager like <code>pip</code> or <code>conda</code> to
+download your library and its dependencies. What are your obligations
+under the GPL? What are your <em>users</em> obligations under the
+GPL?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<p>Because your users are downloading the GPL library using a package
+manager, you are not distributing the code yourself and so you have no
+obligations under the GPL. You may license your code however you like,
+including a closed-source proprietary license.</p>
+<p>If your <em>users</em> distribute software which includes your
+library and the GPL code (for example in an application) then
+<em>they</em> will likely be bound by the GPL and so their distributed
+software will be licensed under the GPL. If your license is not
+compatible with the GPL (such as a proprietary closed-source license)
+then they may not be able to distribute their software.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge4" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>You are looking for how to implement a particular algorithm and find
+a GitHub repo with an implementation contained in a much larger library.
+The library is MIT licensed. You copy just the module that implements
+the algorithm into your code and make your code available via GitHub.
+What are your obligations?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
+<p>Because the licenses depend on copyright, they become effective
+whenever usage goes beyond fair use. A copying a few lines is probably
+fine, but a module is likely substantial enough that it is protected by
+the MIT license terms, and you will have to provide appropriate
+acknowledgement and include the license for that module. You can license
+your code under any compatible license.</p>
+<p>Note that if the code you copied had been GPL licensed you might have
+needed to license all your code under a GPL-compatible license.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="using-open-source-for-ai-training" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
-<div class="callout-inner">
+<div id="using-open-source-for-ai-training" class="callout-inner">
+<h3 class="callout-title">Using Open Source for AI Training</h3>
 <div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
+<p>Open source codebases have been extensively used for training LLMs -
+this is a large part of the reason that they can produce working code.
+However there are some legal questions which are still open at the time
+of writing:</p>
+<ul>
+<li><p>can code generated by an LLM be copyrighted (and therefore
+protected by licenses)? In the UK the answer is yes, but the US
+copyright office guidance is that there should be significant human
+creative input (more than a single prompt).</p></li>
+<li><p>an LLM trained on copyrighted material is likely a derived work.
+It is currently an open question about whether training an LLM on
+copyrighted source code falls under fair use, or whether any licenses on
+the software also apply to the LLM. The Free Software Foundation has
+indicated that <a href="https://www.fsf.org/blogs/licensing/2026-anthropic-settlement" class="external-link">they
+believe that the copyleft licenses should apply to LLMs trained on
+copyleft licensed code</a> and that the model weights and related code
+should be open-sourced with appropiate licenses. This has not been
+tested in court.</p></li>
+<li><p>LLMs can generate copies of code used in training models when
+prompted appropriately. If the copied code is distinctive and
+substantial enough then that code may be considered a derived work of
+the original code and subject to copyright and licensing. At the time of
+writing courts have ruled that all examples of generated code that have
+been brought before them have been sufficiently different to not be
+copyright infringement. Neverthless, this is a risk which should be
+considered when taining on open source code.</p></li>
+</ul>
+<p>If you follow the requirements of the licenses of any code you train
+on (for example, including license text and making available any
+copyleft source files you may have used), just as if you would in a
+regular software project, then your work should be covered by the
+licensing.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-</h2>
-<hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -472,14 +867,17 @@ this:</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>open source software is in use everywhere throughout the modern
+software ecosystem, particularly for research code</li>
+<li>open source software allows usage of software through licensing of
+copyright</li>
+<li>different licenses may impose different obligations</li>
+<li>“permissive” licenses typically require some sort of acknowledgement
+of the original authors, but allow use in closed-source code</li>
+<li>“copyleft” licenses require that software which uses them to also be
+open source</li>
+<li>assess open source software before using it</li>
+<li>ensure that you comply with licenses and cite it correctly</li>
 </ul>
 </div>
 </div>
@@ -488,7 +886,646 @@ locally</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section>
+</div>
+</div></section><section id="aio-11-open-sourcing-code"><p>Content from <a href="11-open-sourcing-code.html">Open Sourcing Your Code</a></p>
+<hr>
+<p>Last updated on 2026-06-22 |
+
+        <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/11-open-sourcing-code.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Should I open source my code?</li>
+<li>What do I need to do for a minimal open source release</li>
+<li>What is involved in a more intentional open source release</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Understand what is involved in successful open source releases.</li>
+<li>Be able to determine whether the effort matches the return that you
+hope to get from your work.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level1">
+<h1 id="releasing-open-source-code">Releasing Open Source Code<a class="anchor" aria-label="anchor" href="#releasing-open-source-code"></a>
+</h1>
+<p>As a researcher there are many reasons to open-source your code. In
+particular, if it is useful within your research community it may have a
+very high impact, potentially more than any paper that you write:</p>
+<figure><img src="../numpy_nature.png" alt="Array programming with NumPy paper in Nature" class="figure mx-auto d-block"><div class="figcaption">Array programming with NumPy paper in
+Nature</div>
+</figure><p>To successfully release open source code takes effort and
+perseverance, and even with that there is no guarantee that your project
+will catch the attention of a community or that recognition of the
+impact will come quickly. The NumPy paper in Nature was published 15
+years after NumPy was first released, and 25 years after Numeric, the
+predecessor of NumPy, was released; and for many of the authors NumPy
+was a significant, unpaid and unacknowledged part of their work for
+years.</p>
+<p>So if you want to open source your code, you should be very
+clear-headed about the reasons you are doing it, put in effort
+commensurate to your goals, and hope that fortune smiles on you.</p>
+<div class="section level2">
+<h2 id="minimal-open-sourcing">Minimal Open Sourcing<a class="anchor" aria-label="anchor" href="#minimal-open-sourcing"></a>
+</h2>
+<p>The minimum amount of effort to open source your code is to put it in
+a public repository on a service like GitHub and give it an appropriate
+license.</p>
+<p>Your choice of license is constrained by the goals you have for your
+code, but also potentially by your organisation and/or funding. Make
+sure that you are clear about this before you release code with a
+license.</p>
+<p>This may be good enough for code associated with a paper that you are
+unlikely to ever re-use, but that other researchers may need access to
+in order to replicate your results. But even for this minimal case, you
+want to follow best practices and make sure that you include
+instructions on how to install and use your code, as well as how to cite
+it.</p>
+</div>
+<div class="section level2">
+<h2 id="open-sourcing-best-practices">Open Sourcing Best Practices<a class="anchor" aria-label="anchor" href="#open-sourcing-best-practices"></a>
+</h2>
+<p>However, you may wish to release open source code in a more
+substantial, re-usable form, either as a library or an application. This
+should be an intentional decision with an understanding of the effort
+required and how it alings with you research and career goals. In that
+case there are other things that you will likely want to do.</p>
+<div class="section level3">
+<h3 id="maintenance">Maintenance<a class="anchor" aria-label="anchor" href="#maintenance"></a>
+</h3>
+<p>The key thing you need to realise is the following:</p>
+<blockquote>
+<p>All code that is not abandoned incurs a cost just by existing.</p>
+</blockquote>
+<p>Bugs are discovered. Dependencies change. Operating systems evolve.
+New platforms emerge. To keep your code current and relevant (sometimes
+referred to as avoiding ‘bit-rot’) there is a constant, low-level
+maintenance effort required. The more code, the larger te effort. You
+can always stop development, and that’s a valid choice if the software
+is no longer achieving your goals, but it will get harder and harder for
+people to use your software as soon as you stop. If you know you will
+not have the time available to do maintenance it is likely not worth the
+effort of anything more than a minimal open sourcing effort.</p>
+<p>Fortunately there are things you can do to make the maintenance
+effort lower, many of which are already things we have discussed as best
+practices:</p>
+<ul>
+<li>good quality code: code which is easy to work with is easy to fix
+when things go wrong</li>
+<li>clear dependencies: to be broadly useful you will likely need to
+support more than a particular release of each of your dependencies, but
+you should be clear through whatever mechanism what your code expects
+the environment it runs in to look like.</li>
+<li>tests: if your code has good tests then it is easier to confidently
+make any changes needed when a dependency changes its API or you need to
+port it to a new platform</li>
+<li>automation: because maintenance is something you will only do
+occasionally, you want to make it easy to get a working development
+environment and perform any tasks that are needed (such as running
+tests) with a minimum of effort and fuss: you don’t want to spend a day
+getting everything set up for a 5 minute bug-fix</li>
+<li>continuous integration: going along with tests and automation is the
+ability to run them automatically in version control, both when making
+changes, but more importantly for maintenance, periodically even when
+there are no changes. Periodic automated tests every week or month will
+notify you when they fail because of dependency or platform changes
+before it becomes an urgent issue for your project.</li>
+</ul>
+<p>None of these make the maintenance effort go away, but they help
+manage it, and will pay-off in the long-term.</p>
+</div>
+<div class="section level3">
+<h3 id="user-documentation">User Documentation<a class="anchor" aria-label="anchor" href="#user-documentation"></a>
+</h3>
+<p>Once you have working, good quality software with tests, you need to
+start focusing on your potential users. No one will use your code if
+they don’t know what it does, how to install it, or how to use it. You
+need user documentation.</p>
+<p>The minimum is a “README” file, and for small packages this may be
+enough. For larger packages you will want to write documentation with
+more depth, and for libraries you probably want to also include
+auto-generated API documentation as a reference.</p>
+<p>The documentation should include a description of what the project’s
+goals are, what it does, how to install it, what its dependencies are,
+and examples of how to use it. Documentation should be under
+source-control, and should be able to be automatically built and
+deployed with minimum effort (ideally as part of CI). Github and similar
+systems provide the ability to host a web site associated with a
+project, and often provide tools for automatic deployment. Other options
+include ReadTheDocs and self-hosting.</p>
+</div>
+<div class="section level3">
+<h3 id="building-awareness-and-community">Building Awareness and Community<a class="anchor" aria-label="anchor" href="#building-awareness-and-community"></a>
+</h3>
+<p>It’s rare for a project to be successful without some sort of
+promotion: talks at conferences, posts on mailing lists, blog posts,
+even videos. People won’t find your project if you don’t announce
+it.</p>
+<p>The most obvious place to find users and potential collaborators is
+within your own research community, but if you are doing something of
+more general interest it may be worth spreading the word more widely.
+Conferences which are about research software development or scientific
+software development. For example in the Python software world the
+PyData, SciPy and EuroSciPy conferences are excellent venues to present
+your software to a wider audience. There are corresponding conferences
+for other languages and ecosystems.</p>
+<p>With users comes more work: they will try to use your software in
+ways that you hadn’t anticipated, and which you need, at a minimum, to
+respond to. But they will also surface bugs you missed and genuine
+problems with your code. And very occasionally, they will suggest fixes
+and contribute new features. You need to be responsive on the issue
+tracker for the project, even if it is to politely say that you don’t
+want to do something.</p>
+<p>A venue for discussions outside of your issue tracking system may
+also be useful: a mailing list, discussion board, or wiki may help once
+your user base grows to more than a few people.</p>
+<p>Community also means things like codes of conduct, contribution
+guides, contributor agreements, and similar.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>if you decide to open source a project, be mindful of the effort
+requird to do it well</li>
+<li>you should follow software development best practices with open
+source software</li>
+<li>documentation is important for success</li>
+<li>if your are successful, you will be managing a community, and all
+that goes with that</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+</div>
+</div></section><section id="aio-12-contributing-to-open-source"><p>Content from <a href="12-contributing-to-open-source.html">Contributing to Open Source</a></p>
+<hr>
+<p>Last updated on 2026-06-22 |
+
+        <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/12-contributing-to-open-source.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Should I contribute to an open source project?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>…</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level1">
+<h1 id="contributing-to-open-source">Contributing to Open Source<a class="anchor" aria-label="anchor" href="#contributing-to-open-source"></a>
+</h1>
+<p>In a very real sense Open Source Software is a gift from the
+developers: they are giving something of value with no expectation of
+direct return.</p>
+<p>It is important when thinking about contributing to open source
+projects to keep this in mind: you are asking for their time and
+attention. Most people who are maintainers of open source software are
+really happy to have other people helping out, but for most it is an
+unpaid, part-time thing that they do. Some may even be willing to help
+new contributors come up to speed on the project. But time they spend
+working with you is time that they are not spending on other things, so
+be mindful and understanding of that.</p>
+<div class="section level2">
+<h2 id="why-contribute">Why Contribute?<a class="anchor" aria-label="anchor" href="#why-contribute"></a>
+</h2>
+<p>There are many reasons to contribute to open source software
+projects. Ideally it is because you use the project and want to see it
+become more useful to you or people that you work with: fewer bugs, more
+features, easier to use, and so on. Occasionally it may be OK to
+contribute to a project that you don’t use if there is something
+specific that you can bring to the table. For example, if you are
+managing an open source library that makes an incompatible change you
+might work with downstream projects to help migrate their code.</p>
+<p>You shouldn’t be contributing to a project that you don’t use simply
+because it’s popular or you think it will bring attention to your own
+work.</p>
+<div id="an-example-contribution" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="an-example-contribution" class="callout-inner">
+<h3 class="callout-title">An Example Contribution</h3>
+<div class="callout-content">
+<p>The author of this Byte-Sized course was working on integrating
+IPython into a GUI app, using IPython’s documentation as a guide. In
+doing this they discovered that things weren’t working quite as expected
+and that there was a minor error in the sample code in the documentation
+for custom IPython “magic” commands.</p>
+<p>The author forked IPython and made the following one-line fix to the
+documentation:</p>
+<figure><img src="../ipython_doc_bug.png" alt="IPython Documentation Fix" class="figure mx-auto d-block"><div class="figcaption">IPython Documentation Fix</div>
+</figure><p>and opened this <a href="https://github.com/ipython/ipython/pull/2713" class="external-link">IPython pull
+request</a>. It was quickly accepted. After 15 years, the <a href="https://github.com/ipython/ipython/blob/fdbdf1c699e80f76a71e3dc5b46a3d164939b3f2/docs/source/config/custommagics.rst?plain=1#L67" class="external-link">fix
+is still in the IPython documentation</a>, although updated for Python 3
+and other changes over the years.</p>
+<p>Writing the fix took less than half an hour, but likely saved anyone
+who was wanting to learn from that example much more than that. This is
+the only contribution the author has made to IPython.</p>
+<p>The take-away is that even tiny contributions have value and can have
+lasting impact: a small thing that makes the world a little better.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="how-to-contribute">How to Contribute<a class="anchor" aria-label="anchor" href="#how-to-contribute"></a>
+</h2>
+<p>You should start with an idea of what it is that you need: is it a
+fix for a bug, a new feature, some documentation? Whatever it is try to
+have it clear in your head before you start.</p>
+<p>Most substantial open source projects have contributor guides. They
+will have information about how to get a development environment set up,
+how to run tests, the expectations for code style and quality, and the
+mechanics of how to submit a pull request and the review process. You
+should read the contribution guide and follow its procedures. Many
+projects will ignore contributions which do not follow the guidelines,
+and may block people who repeatedly refuse to follow the guidelines.</p>
+<div class="section level3">
+<h3 id="open-an-issue">Open an Issue<a class="anchor" aria-label="anchor" href="#open-an-issue"></a>
+</h3>
+<p>The most basic contribution you can make is opening an issue on the
+project’s issue tracker. The issue could be something as simple as a
+minor bug, or as complex as a major new feature. Without an issue, the
+maintainers may not know there is a problem.</p>
+<p>Before opening an issue, search both the open <em>and</em> closed
+issues to see if there is already an open issue for what you want. If
+you are lucky the issue is already resolved and may simply be waiting
+for a release of the software; or someone has already done the work of
+reporting the issue. If you are unlucky the issue may be closed as
+something that won’t be fixed, in which case you should carefully read
+the reasons and respect the decisions of the maintainers.</p>
+<p>If there is an appropriate issue open, you may want to add additional
+relevant information. For example: - for a bug, reporting that it
+happens on another platform, or under different circumstances, or
+providing more detail about the problem - for a feature, adding your
+use-case or need if it is different from those already being
+discussed</p>
+<p>If there isn’t an open issue, you can open one, following the
+guidance of the contribution guide and any issue templates the project
+might have. Your issue should be clearly written, describing precisely
+what the problem is, and what you have tried to fix it. If you are
+reporting a bug you should describe your platform and environment, how
+you can trigger the bug, and any error messages or log files generated.
+For feature requests you should describe what you are trying to do at a
+high level, how you would like the new feature to work, examples of
+usage, and <em>possibly</em> thoughts about implementation if you have
+sufficient knowledge.</p>
+<p>You should monitor the issue that you have opened. The maintainers
+may respond with questions to clarify what is needed and find out more
+information. This may not happen immediately: maintainers may not have
+time to respond for days or even weeks (they may be in a different time
+zone from you, and even open source maintainers take vacations!).</p>
+</div>
+<div class="section level3">
+<h3 id="make-a-pull-request">Make a Pull Request<a class="anchor" aria-label="anchor" href="#make-a-pull-request"></a>
+</h3>
+<p>When there is an issue open to track things, you can start working on
+resolving it. Before you start work you should check that no-one else
+has started work on it (for example by assigning the issue to
+themselves).</p>
+<p>Unlike your own projects, you almost certainly don’t have commit
+rights on the project repository. This means that before you start work
+you have to <em>fork</em> the repository: make your own copy of the
+repository where you will do you work.</p>
+<p>Once you have forked the repository, clone your fork to your local
+machine. Make a branch for your work (following any naming convention
+the project may have) and work on the code using your fork as you would
+if it were your own project.</p>
+<p>Try to keep your changes small and self-contained and focused on the
+issue that you are trying to fix. If you run into more problems as you
+work, open issues for them, but don’t necessarily try to fix everything
+at once.</p>
+<p>When you think that your work is ready for review push your branch to
+<em>your</em> fork and then in GitHub open a pull request for that
+branch to the project’s repo (usually to the main development
+branch).</p>
+<p>Go through the normal code review process with the maintainers. As
+with opening an issue, don’t expect an immediate response.</p>
+<p>If the process takes a while you may need to update your fork from
+the repo and merge in changes to your working branch. The maintainers
+may also contribute code directly to your branch as part of the review
+process, in which case you will need to pull the branch from your fork
+to update.</p>
+<p>Hopefully you will end up in a place where both you and the
+maintainers are happy with the pull request and the maintainer will
+merge the PR.</p>
+</div>
+<div class="section level3">
+<h3 id="what-if-the-pull-request-is-rejected">What if the Pull Request is Rejected?<a class="anchor" aria-label="anchor" href="#what-if-the-pull-request-is-rejected"></a>
+</h3>
+<p>This can happen for any number of reasons. Ideally these sorts of
+things are resolved as part of the discussion around the issue that you
+opened so that you don’t do a lot of work for nothing. But it might be
+that the maintainer sees a different approach that might work better, or
+there is a fundamental flaw in your work, or that the PR is too large
+and needs to be broken up, or even that it makes sense to combine the PR
+with some other unit of work.</p>
+<p>Or they may simply decide that, on seeing the working code, that it
+doesn’t mesh with their idea of where they want to take the project.</p>
+<p>At the end of the day it is their project, and they get to decide on
+what is included and what is not.</p>
+<p>The good news, and the beauty of open source, is that you have a fork
+which contains code that <em>you</em> are happy with and which solves
+your problem, and so you can use your fork in the place of the main repo
+in your work if it makes sense. There is some effort required to keep
+your fork current, and it is a little more complex to depend on your
+fork than the main repository, so it isn’t free. But at the end of the
+day you have solved your problem.</p>
+<div id="ai-and-open-source-contributions" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="ai-and-open-source-contributions" class="callout-inner">
+<h3 class="callout-title">AI and Open Source Contributions</h3>
+<div class="callout-content">
+<p>At the time of writing there is some controversy in the open-source
+community on how to handle AI-based contributions to open-source
+codebases. Some projects have enthusiastically embraced contributions
+generated by LLMs, but many projects are facing the problem of large
+numbers of low-quality AI-generated pull requests. These have to be
+triaged by human project maintainers: people spending effort to see if
+there is anything worthwhile in what they are being given; people who
+would much rather be writing new features or fixing bugs themselves.</p>
+<p>Additionally there are still some unresolved legal questions about
+the copyright status of LLM generated code, and that status varies from
+country to country.</p>
+<p>As a result many projects have very strict policies about AI use,
+including many outright bans.</p>
+<p>Make sure that if you want to contribute to a project you follow
+their guidelines. And even if you are working on a project which permits
+LLM usage, you will likely get a better reception for your contributions
+if you write any issues and pull requests yourself: at the end of the
+day you need to convince a human that your contribution is useful and to
+do that you need to <em>engage</em> with them.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="alternatives-to-contributing-to-a-project">Alternatives to Contributing to a Project<a class="anchor" aria-label="anchor" href="#alternatives-to-contributing-to-a-project"></a>
+</h2>
+<p>Sometimes a contribution to a project is not the right way to share
+the work that you have done, and maintaining your own fork may be a
+substantial effort. In these cases, particularly for open source
+libraries, it may make more sense to create an extension or “plug-in”
+for the open source library in your own open source project.</p>
+<p>For example, a general-purpose machine learning library is likely to
+have a selection of the most general and well-proven algorithms, and
+won’t likely accept new algorithms unless they also fall into the
+category. If you have developed a new technique as part of your
+research, then it is unlikely that a contribution with that algorithm
+would be accepted.</p>
+<p>In this case, if you were to create your own library which depends on
+an the general purpose library, implementing your algorithm but using
+its conventions, using its tools, and following its API, then your
+library is compatibile with the general-purpose library and familiar to
+its users. If you design things well, you may be able to make your
+algorithm a drop-in replacement for the general-purpose algorithms.</p>
+<p>Working in this sort of way, you are more likely to get users who are
+familiar with the open source library you are working with to use your
+code. And if your algorithm gains popularity and adoption then it will
+be easier to integrate it into the project you are using later on.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>be mindful of the constraints that face developers of open source
+software</li>
+<li>be clear to yourself on why you want to contribute to an open source
+project</li>
+<li>follow the guidelines and conventions of any project that you are
+planning to work with</li>
+<li>to make a contribution: make a fork of the project, clone it, and
+work on a branch, then push the branch and make a pull request</li>
+<li>understand that your vision and the projects visions may not agree,
+and that contributions may not be accepted</li>
+<li>consider alternatives to directo contribution to a project</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+</div></section><section id="aio-13-working-with-github"><p>Content from <a href="13-working-with-github.html">Working with GitHub</a></p>
+<hr>
+<p>Last updated on 2026-06-22 |
+
+        <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/13-working-with-github.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do I contribute to an open source project hosted on GitHub?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Learn how to fork an open source repository.</li>
+<li>Learn how to open a pull request using a branch on a forked
+repository.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level1">
+<h1 id="activity">Activity<a class="anchor" aria-label="anchor" href="#activity"></a>
+</h1>
+<p>In this activity we’ll work through the steps needed to make a pull
+request against a third-party open source project.</p>
+<div class="section level2">
+<h2 id="example-repository">Example Repository<a class="anchor" aria-label="anchor" href="#example-repository"></a>
+</h2>
+<p>The instructor will give you a link to the code repository you will
+be working with.</p>
+<p>Rather than a code, this repository contains information about the
+folk tale “Stone Soup”:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="fu"># Stone Soup</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a>The folk story <span class="co">[</span><span class="ot">Stone Soup</span><span class="co">](https://en.wikipedia.org/wiki/Stone_Soup)</span> is an excellend allegory for the way that open source software can work.  From Wikipedia:</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1" aria-label="code-block-1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1" aria-label="code-block-1-5"></a><span class="at">&gt; Some travelers come to a village, carrying nothing more than an empty cooking pot. Upon their arrival, the villagers are unwilling to share any of their food stores with the very hungry travelers. Then the travelers go to a stream and fill the pot with water, drop a large stone in it, and place it over a fire. One of the villagers becomes curious and asks what they are doing. The travelers answer that they are making "stone soup", which tastes wonderful and which they would be delighted to share with the villager, although it still needs a little bit of garnish, which they are missing, to improve the flavor.</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1" aria-label="code-block-1-6"></a><span class="at">&gt; </span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1" aria-label="code-block-1-7"></a><span class="at">&gt; The villager, who anticipates enjoying a share of the soup, does not mind parting with a few carrots, so these are added to the soup. Another villager walks by, inquiring about the pot, and the travelers again mention their stone soup which has not yet reached its full potential. More and more villagers walk by, each adding another ingredient, like potatoes, onions, cabbages, peas, celery, tomatoes, sweetcorn, meat (like chicken, pork and beef), milk, butter, salt and pepper. Finally, the stone (being inedible) is removed from the pot, and a delicious and nourishing pot of soup is enjoyed by travelers and villagers alike. Although the travelers have thus tricked the villagers into sharing their food with them, they have successfully transformed it into a tasty meal which they share with the donors.</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1" aria-label="code-block-1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1" aria-label="code-block-1-9"></a><span class="fu">## Recipe</span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1" aria-label="code-block-1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1" aria-label="code-block-1-11"></a>Place a large pot of water over low heat and add:</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1" aria-label="code-block-1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1" aria-label="code-block-1-13"></a><span class="ss">- </span>a stone</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1" aria-label="code-block-1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1" aria-label="code-block-1-15"></a>Simmer until done.  Remove stone and serve the soup.</span></code></pre>
+</div>
+<p>Clearly, the recipe needs more ingredients.</p>
+<div class="section level3">
+<h3 id="open-an-issue">Open an Issue<a class="anchor" aria-label="anchor" href="#open-an-issue"></a>
+</h3>
+<p>Go to the GitHub repository and open an issue that suggests a way
+that the recipe can be improved: perhaps an ingredient to add?</p>
+</div>
+<div class="section level3">
+<h3 id="fork-the-repository">Fork the Repository<a class="anchor" aria-label="anchor" href="#fork-the-repository"></a>
+</h3>
+<p>On the main page of the repository, click the “Fork” button. You
+should see a page which allows you to change the name of the repository.
+Accept the default settings.</p>
+<p>You should now have a copy of the GitHub repository in your GitHUb
+account.</p>
+</div>
+<div class="section level3">
+<h3 id="clone-the-repository">Clone the Repository<a class="anchor" aria-label="anchor" href="#clone-the-repository"></a>
+</h3>
+<p>In the “Code” button on <em>your</em> fork of the repository, copy
+the URL. Change directory to your root directory and then paste it into
+a clone command in your shell:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="bu">cd</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="fu">git</span> clone .../stone-soup-example</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a><span class="bu">cd</span> stone-soup-example</span></code></pre>
+</div>
+</div>
+<div class="section level3">
+<h3 id="create-a-branch-and-make-your-changes">Create a Branch and Make Your Changes<a class="anchor" aria-label="anchor" href="#create-a-branch-and-make-your-changes"></a>
+</h3>
+<p>Choose an issue that you will work on and use git to create a branch
+for your work. You might want to use your name in the branch name, or
+some other way of making sure it doesn’t conflict with the names that
+other people choose for their work.</p>
+<p>Now edit the recipe with your improvement or fixes and commit the
+changes.</p>
+</div>
+<div class="section level3">
+<h3 id="push-the-branch-and-open-a-pr">Push the Branch and Open a PR<a class="anchor" aria-label="anchor" href="#push-the-branch-and-open-a-pr"></a>
+</h3>
+<p>Once you have made your updates, push the branch to your fork.</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">git</span> push origin ...</span></code></pre>
+</div>
+<p>As usual, the message gives you a GitHub URL you can open to create
+the pull request, or you can go to your fork on github and find the
+branch there to open the pull request. However, when you start to make
+the PR you will see that the target for your pull request will be the
+upstream repository.</p>
+<p>Fill in the description of your pull request, and then go to the
+upstream repository and you should see your pull request.</p>
+</div>
+<div class="section level3">
+<h3 id="resolving-merge-conflicts">Resolving Merge Conflicts<a class="anchor" aria-label="anchor" href="#resolving-merge-conflicts"></a>
+</h3>
+<p>After the first of the pull requests is merged, it is likely that
+your pull request can no longer be automatically merged. In some
+projects the maintainer may manage the conflict resolution themselves,
+but you can also do it yourself.</p>
+<p>Go to your fork and select the sync repository button.</p>
+<p>In your local clone switch to the main branch and pull from your
+fork:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="fu">git</span> switch main</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="fu">git</span> pull</span></code></pre>
+</div>
+<p>Then switch back to your branch and merge main (using a normal
+three-way merge, <em>don’t</em> do a rebase merge), resolving any
+conflicts.</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="fu">git</span> switch ...</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a><span class="fu">git</span> merge main</span></code></pre>
+</div>
+<p>Then push your changes back to your fork:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="fu">git</span> push origin ...</span></code></pre>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+</div>
+</div></section>
 </div>
     </main>
 </div>
@@ -501,14 +1538,14 @@ any links that you are not going to use.
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/README.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/carpentries/workbench-template-md/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/carpentries/workbench-template-md/" class="external-link">Source</a></p>
+        | <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/" class="external-link">Source</a></p>
         <p>
         <a href="../citation.html">Cite</a>
-        | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="mailto:C.J.Webster@soton.ac.uk">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 		</div>
 		<div class="col-md-6">
 
@@ -528,18 +1565,18 @@ any links that you are not going to use.
     {
   "@context": "https://schema.org",
   "@type": "LearningResource",
-  "@id": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
+  "@id": "https://Southampton-RSG-Training.github.io/byte-sized-rse-script-open-source/instructor/aio.html",
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "software, data, lesson, The Carpentries",
+  "keywords": "open source, software",
   "name": "All in One View",
   "creativeWorkStatus": "active",
-  "url": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
-  "identifier": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
+  "url": "https://Southampton-RSG-Training.github.io/byte-sized-rse-script-open-source/instructor/aio.html",
+  "identifier": "https://Southampton-RSG-Training.github.io/byte-sized-rse-script-open-source/instructor/aio.html",
   "dateCreated": "2026-06-16",
-  "dateModified": "2026-06-16",
-  "datePublished": "2026-06-16"
+  "dateModified": "2026-06-22",
+  "datePublished": "2026-06-22"
 }
 
   </script><script>
