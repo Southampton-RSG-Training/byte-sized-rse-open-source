@@ -227,15 +227,6 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
-<div class="accordion accordion-flush" id="accordionFlush5">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading5">
-        <a href="13-working-with-github.html">4. Working with GitHub</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
                 </div>
               </div>
             </div>
@@ -294,7 +285,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction</h1>
-        <p>Last updated on 2026-06-22 |
+        <p>Last updated on 2026-06-29 |
 
         <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/10-open-source-introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -339,11 +330,10 @@ with.</li>
 </div>
 <div class="section level1">
 <h1 id="open-source-software">Open Source Software<a class="anchor" aria-label="anchor" href="#open-source-software"></a></h1>
-<p>Open Source has transformed the research world over the last quarter
-century: the chances are any modern research software project relies in
-critical ways on open source software, whether it is Linux, SLURM,
-WebEngine, React, Python, R, NumPy, or PyTorch (or all of them!) or any
-of a vast array of other projects, big and small.</p>
+<p>Open Source has transformed the world of academic research over the
+last quarter century: the chances are any modern research software
+project relies in critical ways on open source software projects, both
+big and small.</p>
 <p>The power of open source is that it allows many different people and
 groups to contribute, expand, debug and improve a piece of software,
 adapting it to changing needs and use-cases as time goes on. Each user
@@ -360,13 +350,11 @@ the source code for the software with a little knowledge and some tools
 you can fix that bug or add that missing piece of functionality. And
 that often can be the end of the story: you’ve solved your problem and
 you can move on.</p>
-<p>But that may not be the end of the story. Perhaps you want to use an
-open source library in software that you are distributing. Perhaps you
-think your changes might be valuable other people with the same problems
-that you’ve run into. In these cases you may need to publish your code,
-and in some cases you might want to work with the community to
-incorporate your changes back into the original software. Or maybe you
-have code that you want to open source yourself.</p>
+<p>But there are other ways that you might want to use open source
+software: perhaps you want to use an open source library in software
+that you are distributing; perhaps you think your changes might be
+valuable other people with the same problems that you’ve run into;
+perhaps you want to make your code available as open source.</p>
 <p>In these cases you need to have an understanding of the licenses that
 protect open source code, the way that open source communities work, and
 the mechanics of contributing to someone else’s project.</p>
@@ -376,20 +364,23 @@ the mechanics of contributing to someone else’s project.</p>
 sense that it doesn’t cost anything to use, but also in the sense that
 you are able to use it however you want. However most open source
 software is not <em>completely</em> free to use.</p>
-<p>Software source is considered a creative work, and so is protected by
-copyright unless it has been placed in the public domain by the author
-or by copyright expiring. By default you can’t just copy the source code
-of a program and use it yourself. So open source software usually comes
-with some sort of <em>license</em> which describes how you can and can’t
-use it. These licenses may be simple or complex, and may or may not
-place obligations on you if you use the source in certain ways.</p>
-<p>The author or authors of a piece of software usually still control
-the copyright, and so they can choose to license the software in
+<p>Software source code is considered a creative work, and so is
+protected by copyright as soon as it is written. The only exception is
+code taht has been added to the public domain, either explicitly by the
+author or by copyright expiring. In other words, by default you can’t
+just copy the source code of a program and use it yourself. You need
+permission from the owner of the copyright to copy the code to your
+computer and to work with it. So open source software usually comes with
+some sort of <em>license</em> which describes how you can and can’t use
+it. These licenses may be simple or complex, and may or may not place
+obligations on you if you use the source in certain ways.</p>
+<p>A license doesn’t transfer any ownership rights, and so the copyright
+holder of a piece of code can choose to license the software in
 different ways and under different terms if they want to. For example it
 is somewhat common for companies to open source their code under a
 restrictive license and offer a commercial license with less restrictive
 terms.</p>
-<p>This course is going to mostly concentrate on software and software
+<p>This session is going to mostly concentrate on software and software
 licenses, but there are notions of open source for other types of
 creative work, often using the Creative Commons licenses, which have
 many similarities to open source software licenses. For example, this
@@ -414,7 +405,8 @@ License 2.0 and GPL 3, have clauses regarding patents.</p>
 open source projects may have trademark protection. This may affect how
 you can present your relationship to the software, how you use logos,
 and so on. You may need to take some care when naming your project that
-it does not conflict with prominent project names.</p>
+it does not conflict with prominent project names: you may be politely
+asked to change the name of your project.</p>
 <p>If you have serious concerns about the intellectual property
 implications of the way that you want to use a piece of software you
 should consult with a lawyer.</p>
@@ -427,15 +419,18 @@ should consult with a lawyer.</p>
 <p>There are many different open source licenses in use in the thousands
 upon thousands of open source projects. The <a href="https://opensource.org/licenses" class="external-link">Open Source Initiative has a list
 of licenses</a> that it considers to be “open source”, but even then
-there are open source licenses which don’t match its definitions which
-may be useful for research code (for example, licenses which restrict
-commercial use).</p>
-<p>But in general license fall into a few different general categories
-in terms of the <em>requirements</em> they place on use:</p>
+there are open source licenses which don’t match the OSI definitions
+which may still be useful for research code. For example, licenses which
+restrict commercial use may be acceptable for use in a research
+setting.</p>
+<p>But in general, open source licenses fall into a few different
+general categories in terms of the <em>requirements</em> they place on
+use:</p>
 <ul><li>
 <strong>attribution requirements</strong>: a requirement to
-acknowledge the use of the code, often by including a license file.
-These sorts of requirements are sometimes called “permissive”.</li>
+acknowledge the use of the code, often by including a copy of the
+license in a file. These sorts of requirements are sometimes called
+“permissive”.</li>
 <li>
 <strong>source sharing requirements</strong>: a requirement to
 distribute or link to source code, usually under the same license as the
@@ -444,7 +439,7 @@ code. These sorts of requirements are often called “copyleft” or
 <li>
 <strong>usage restrictions</strong>: some limitation on the ways the
 code may be used, frequently things like restricting commercial use, or
-use in ways that they authors find unethical.</li>
+preventing use in ways that they authors find unethical.</li>
 </ul><p>In general permissive licenses allow the software to be used as part
 of a closed source or commercial product. Copyleft licenses usually
 prevent use in closed source software.</p>
@@ -458,10 +453,10 @@ stand-alone program, library, or in embedded hardware</li>
 <li>
 <em>using</em> the code for particular purposes</li>
 </ul><p>Most licenses are fairly easy to read, and for the most commonly used
-licenses there are often guides that give and idea of the
-<em>intent</em> of the license. Even if you are within the letter of the
-license in what you are doing, breaking the intent of the license may
-bring negative attention from the people whose work you depend on.</p>
+licenses there are often guides that give the <em>intent</em> of the
+license. Even if you are within the letter of the license in what you
+are doing, breaking the intent of the license may bring negative
+attention from the people whose work you depend on.</p>
 <p>Common examples of licenses are:</p>
 <ul><li>
 <a href="https://en.wikipedia.org/wiki/BSD_licenses" class="external-link"><strong>BSD</strong></a>:
@@ -499,6 +494,13 @@ server-side system. The <a href="https://en.wikipedia.org/wiki/Server_Side_Publi
 Public License (SSPL)</a> is a similar license used by some projects.
 ElasticSearch, MongoDB and Redis are major projects which use this type
 of license.</li>
+<li>
+<a href="https://creativecommons.org" class="external-link"><strong>Creative
+Commons</strong></a> A collection of licenses intended for general
+creative works that allow you to pick and choose how permissive or viral
+you want the license to be. These are sometimes used for software, but
+are more common for documentation, images and similar content that might
+be part of a larger project.</li>
 </ul><div id="license-example" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -559,10 +561,11 @@ for the library, but also for proprietary code that uses the
 library.</p>
 <p>On the other hand, when considering commercialisation, some companies
 will dual-license their code: anyone can use the code if they agree to a
-copyleft license (which requires them to share any proprietary code),
-but they also offer a more standard paid commercial license without the
-copyleft provisions. This permits them to build a community around their
-software, but also to earn income from other commercial users.</p>
+copyleft license (which requires them to share any proprietary code if
+they share their work), but they also offer a more standard paid
+commercial license without the copyleft provisions. This permits them to
+build a community around their software, but also to earn income from
+other commercial users.</p>
 </div>
 </div>
 <div class="section level2">
@@ -640,7 +643,7 @@ under the Linux GPL license?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>You are distributing Linux in a binary form (likely along with may
 other GPL programs). You need to include the copyright notice and
@@ -677,7 +680,7 @@ acknowledge the use of the library?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You are using the BSD licensed code internally within your
 organization, so you are not distributing it and so you do not need to
@@ -710,7 +713,7 @@ GPL?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Because your users are downloading the GPL library using a package
 manager, you are not distributing the code yourself and so you have no
@@ -747,7 +750,7 @@ What are your obligations?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Because the licenses depend on copyright, they become effective
 whenever usage goes beyond fair use. A copying a few lines is probably
@@ -769,19 +772,19 @@ needed to license all your code under a GPL-compatible license.</p>
 <div id="using-open-source-for-ai-training" class="callout-inner">
 <h3 class="callout-title">Using Open Source for AI Training</h3>
 <div class="callout-content">
-<p>Open source codebases have been extensively used for training LLMs -
-this is a large part of the reason that they can produce working code.
-However there are some legal questions which are still open at the time
-of writing:</p>
+<p>Open source codebases have been extensively used for training
+language models - this is a large part of the reason that they can
+produce working code. However there are some legal questions which are
+still open at the time of writing:</p>
 <ul><li><p>can code generated by an LLM be copyrighted (and therefore
 protected by licenses)? In the UK the answer is yes, but the US
 copyright office guidance is that there should be significant human
 creative input (more than a single prompt).</p></li>
-<li><p>an LLM trained on copyrighted material is likely a derived work.
-It is currently an open question about whether training an LLM on
-copyrighted source code falls under fair use, or whether any licenses on
-the software also apply to the LLM. The Free Software Foundation has
-indicated that <a href="https://www.fsf.org/blogs/licensing/2026-anthropic-settlement" class="external-link">they
+<li><p>an LLM trained on copyrighted material may be considered a
+derived work. It is currently an open question about whether training an
+LLM on copyrighted source code falls under fair use, or whether any
+licenses on the software also apply to the LLM. The Free Software
+Foundation has indicated that <a href="https://www.fsf.org/blogs/licensing/2026-anthropic-settlement" class="external-link">they
 believe that the copyleft licenses should apply to LLMs trained on
 copyleft licensed code</a> and that the model weights and related code
 should be open-sourced with appropiate licenses. This has not been
@@ -793,12 +796,12 @@ the original code and subject to copyright and licensing. At the time of
 writing courts have ruled that all examples of generated code that have
 been brought before them have been sufficiently different to not be
 copyright infringement. Neverthless, this is a risk which should be
-considered when taining on open source code.</p></li>
+considered when training on open source code.</p></li>
 </ul><p>If you follow the requirements of the licenses of any code you train
-on (for example, including license text and making available any
-copyleft source files you may have used), just as if you would in a
-regular software project, then your work should be covered by the
-licensing.</p>
+on (for example, including license text, making available any copyleft
+source files you may have used, and publishing the model weights and
+your source code), just as if you would in a regular software project,
+then your work should be covered by the licensing.</p>
 </div>
 </div>
 </div>
@@ -892,8 +895,8 @@ any links that you are not going to use.
   "url": "https://Southampton-RSG-Training.github.io/byte-sized-rse-script-open-source/instructor/10-open-source-introduction.html",
   "identifier": "https://Southampton-RSG-Training.github.io/byte-sized-rse-script-open-source/instructor/10-open-source-introduction.html",
   "dateCreated": "2026-06-16",
-  "dateModified": "2026-06-22",
-  "datePublished": "2026-06-23"
+  "dateModified": "2026-06-29",
+  "datePublished": "2026-06-29"
 }
 
   </script><script>

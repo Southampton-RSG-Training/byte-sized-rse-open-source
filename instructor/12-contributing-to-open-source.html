@@ -118,7 +118,7 @@
     <a id="search-button" class="btn btn-primary" href="../instructor/aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
   </div><!--/div.container-fluid -->
 </nav><aside class="col-md-12 lesson-progress"><div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Lesson Progress">50%</div>
+    <div class="progress-bar incubator" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" aria-label="Lesson Progress">67%</div>
   </div>
 </aside><div class="container">
       <div class="row">
@@ -227,15 +227,6 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
-<div class="accordion accordion-flush" id="accordionFlush5">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading5">
-        <a href="13-working-with-github.html">4. Working with GitHub</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
                 </div>
               </div>
             </div>
@@ -279,7 +270,7 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter Top"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/11-open-sourcing-code.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="../instructor/13-working-with-github.html" rel="next">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/index.html" rel="next">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -287,14 +278,14 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Open Sourcing Your
         </a>
-        <a class="chapter-link float-end" href="../instructor/13-working-with-github.html" rel="next">
-          Next: Working with GitHub...
+        <a class="chapter-link float-end" href="../instructor/index.html" rel="next">
+          Home
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Contributing to Open Source</h1>
-        <p>Last updated on 2026-06-22 |
+        <p>Last updated on 2026-06-29 |
 
         <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/12-contributing-to-open-source.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -316,6 +307,11 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul><li>Should I contribute to an open source project?</li>
+<li>What does the process of contributing look like?</li>
+<li>How do I contribute to an open source project hosted on GitHub?</li>
+<li>What should I do if my contribution is rejected?</li>
+<li>Are there alternatives to contributing to an open-source
+project?</li>
 </ul></div>
 </div>
 </div>
@@ -323,7 +319,9 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>…</li>
+<ul><li>Learn how to fork an open source repository.</li>
+<li>Learn how to open a pull request using a branch on a forked
+repository.</li>
 </ul></div>
 </div>
 </div>
@@ -351,10 +349,24 @@ features, easier to use, and so on. Occasionally it may be OK to
 contribute to a project that you don’t use if there is something
 specific that you can bring to the table. For example, if you are
 managing an open source library that makes an incompatible change you
-might work with downstream projects to help migrate their code.</p>
-<p>You shouldn’t be contributing to a project that you don’t use simply
-because it’s popular or you think it will bring attention to your own
-work.</p>
+might work with downstream projects to help migrate their code.
+Contributing can also be a good way to learn things while solving real
+problems that help others.</p>
+<p>While your primary motivations for contributing to a project should
+be around the goals or subject matter of the project, open source
+software contributions have a number of secondary benefits. For example
+your contributions provide a public record of your coding ability and
+mastery of modern software development processes, which may be useful
+when applying for a position. Similarly, if the codebase is related to
+your work, it may be something that you can give as evidence of
+research-related activities. Working on a project will also helo your
+software development skills more generally—you will hone your skills on
+writing good code, in finding bugs, writing good tests, and so
+on—because your work will be being reviewed by more experienced
+developers who will give you feedback.</p>
+<p>On the other hand, you shouldn’t be contributing to a project that
+you don’t use simply because it’s popular or you think it will bring
+attention to your own work.</p>
 <div id="an-example-contribution" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -390,12 +402,70 @@ lasting impact: a small thing that makes the world a little better.</p>
 fix for a bug, a new feature, some documentation? Whatever it is try to
 have it clear in your head before you start.</p>
 <p>Most substantial open source projects have contributor guides. They
-will have information about how to get a development environment set up,
-how to run tests, the expectations for code style and quality, and the
-mechanics of how to submit a pull request and the review process. You
-should read the contribution guide and follow its procedures. Many
-projects will ignore contributions which do not follow the guidelines,
-and may block people who repeatedly refuse to follow the guidelines.</p>
+will have information about how to set up a development environment, how
+to run tests, the expectations for code style and quality, the mechanics
+of how to submit a pull request, and the review process. You should read
+the contribution guide and follow its procedures. Many projects will
+ignore contributions which do not follow the guidelines, and may block
+people who repeatedly refuse to follow them.</p>
+<div id="ai-and-open-source-contributions" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="ai-and-open-source-contributions" class="callout-inner">
+<h3 class="callout-title">AI and Open Source Contributions</h3>
+<div class="callout-content">
+<p>At the time of writing there is some controversy in the open-source
+community on how to handle AI-based contributions to open-source
+codebases. Some projects have enthusiastically embraced contributions
+generated by large language models, but many projects are facing the
+problem of large numbers of low-quality AI-generated pull requests.
+These have to be triaged by human project maintainers: people spending
+effort to see if there is anything worthwhile in what they are being
+given; people who would much rather be writing new features or fixing
+bugs themselves.</p>
+<p>Additionally there are still some unresolved legal questions about
+the intellectual property status of LLM generated code, and that status
+varies from country to country.</p>
+<p>As a result many projects have very strict policies about AI use,
+including many outright bans.</p>
+<p>Make sure that if you want to contribute to a project you follow
+their guidelines. And even if you are working on a project which permits
+LLM usage, you will likely get a better reception for your contributions
+if you write any issues and pull requests yourself: at the end of the
+day you need to convince a human that your contribution is useful and to
+do that you need to <em>engage</em> with them.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="example-repository">Example Repository<a class="anchor" aria-label="anchor" href="#example-repository"></a></h3>
+<p>The instructor will give you a link to the code repository you will
+be working with.</p>
+<p>Rather than a code, this repository contains information about the
+folk tale “Stone Soup”:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="fu"># Stone Soup</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a>The folk story <span class="co">[</span><span class="ot">Stone Soup</span><span class="co">](https://en.wikipedia.org/wiki/Stone_Soup)</span> is an excellend allegory for the way that open source software can work.  From Wikipedia:</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1" aria-label="code-block-1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1" aria-label="code-block-1-5"></a><span class="at">&gt; Some travelers come to a village, carrying nothing more than an empty cooking pot. Upon their arrival, the villagers are unwilling to share any of their food stores with the very hungry travelers. Then the travelers go to a stream and fill the pot with water, drop a large stone in it, and place it over a fire. One of the villagers becomes curious and asks what they are doing. The travelers answer that they are making "stone soup", which tastes wonderful and which they would be delighted to share with the villager, although it still needs a little bit of garnish, which they are missing, to improve the flavor.</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1" aria-label="code-block-1-6"></a><span class="at">&gt; </span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1" aria-label="code-block-1-7"></a><span class="at">&gt; The villager, who anticipates enjoying a share of the soup, does not mind parting with a few carrots, so these are added to the soup. Another villager walks by, inquiring about the pot, and the travelers again mention their stone soup which has not yet reached its full potential. More and more villagers walk by, each adding another ingredient, like potatoes, onions, cabbages, peas, celery, tomatoes, sweetcorn, meat (like chicken, pork and beef), milk, butter, salt and pepper. Finally, the stone (being inedible) is removed from the pot, and a delicious and nourishing pot of soup is enjoyed by travelers and villagers alike. Although the travelers have thus tricked the villagers into sharing their food with them, they have successfully transformed it into a tasty meal which they share with the donors.</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1" aria-label="code-block-1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1" aria-label="code-block-1-9"></a><span class="fu">## Recipe</span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1" aria-label="code-block-1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1" aria-label="code-block-1-11"></a>Place a large pot of water over low heat and add:</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1" aria-label="code-block-1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1" aria-label="code-block-1-13"></a><span class="ss">- </span>a stone</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1" aria-label="code-block-1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1" aria-label="code-block-1-15"></a>Simmer until done.  Remove stone and serve the soup.</span></code></pre>
+</div>
+<p>Clearly, the recipe needs more ingredients.</p>
+</div>
 <div class="section level3">
 <h3 id="open-an-issue">Open an Issue<a class="anchor" aria-label="anchor" href="#open-an-issue"></a></h3>
 <p>The most basic contribution you can make is opening an issue on the
@@ -430,6 +500,19 @@ may respond with questions to clarify what is needed and find out more
 information. This may not happen immediately: maintainers may not have
 time to respond for days or even weeks (they may be in a different time
 zone from you, and even open source maintainers take vacations!).</p>
+<div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Go to the GitHub repository and open an issue that suggests a way
+that the recipe can be improved: perhaps an ingredient to add?</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="make-a-pull-request">Make a Pull Request<a class="anchor" aria-label="anchor" href="#make-a-pull-request"></a></h3>
@@ -441,6 +524,22 @@ themselves).</p>
 rights on the project repository. This means that before you start work
 you have to <em>fork</em> the repository: make your own copy of the
 repository where you will do you work.</p>
+<div id="fork-the-repository" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="fork-the-repository" class="callout-inner">
+<h3 class="callout-title">Fork the Repository</h3>
+<div class="callout-content">
+<p>On the main page of the repository, click the “Fork” button. You
+should see a page which allows you to change the name of the repository.
+Accept the default settings.</p>
+<p>You should now have a copy of the GitHub repository in your GitHUb
+account.</p>
+</div>
+</div>
+</div>
 <p>Once you have forked the repository, clone your fork to your local
 machine. Make a branch for your work (following any naming convention
 the project may have) and work on the code using your fork as you would
@@ -449,10 +548,67 @@ if it were your own project.</p>
 issue that you are trying to fix. If you run into more problems as you
 work, open issues for them, but don’t necessarily try to fix everything
 at once.</p>
+<div id="clone-the-repository" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="clone-the-repository" class="callout-inner">
+<h3 class="callout-title">Clone the Repository</h3>
+<div class="callout-content">
+<p>On the main page of the repository, click the “Fork” button. You
+should see a page which allows you to change the name of the repository.
+Accept the default settings.</p>
+<p>You should now have a copy of the GitHub repository in your GitHUb
+account.</p>
+</div>
+</div>
+</div>
+<div id="create-a-branch-and-make-your-changes" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="create-a-branch-and-make-your-changes" class="callout-inner">
+<h3 class="callout-title">Create a Branch and Make Your Changes</h3>
+<div class="callout-content">
+<p>Choose an issue that you will work on fromt he repository and use git
+to create a branch for your work. You might want to use your name in the
+branch name, or some other way of making sure it doesn’t conflict with
+the names that other people choose for their work.</p>
+<p>Now edit the recipe with your improvement or fixes and commit the
+changes.</p>
+</div>
+</div>
+</div>
 <p>When you think that your work is ready for review push your branch to
 <em>your</em> fork and then in GitHub open a pull request for that
 branch to the project’s repo (usually to the main development
 branch).</p>
+<div id="push-the-branch-and-open-a-pr" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="push-the-branch-and-open-a-pr" class="callout-inner">
+<h3 class="callout-title">Push the Branch and Open a PR</h3>
+<div class="callout-content">
+<p>Once you have made your updates, push the branch to your fork.</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">git</span> push origin ...</span></code></pre>
+</div>
+<p>As usual, the message gives you a GitHub URL you can open to create
+the pull request, or you can go to your fork on github and find the
+branch there to open the pull request. However, when you start to make
+the PR you will see that the target for your pull request will be the
+upstream repository.</p>
+<p>Fill in the description of your pull request, and then go to the
+upstream repository and you should see your pull request.</p>
+</div>
+</div>
+</div>
 <p>Go through the normal code review process with the maintainers. As
 with opening an issue, don’t expect an immediate response.</p>
 <p>If the process takes a while you may need to update your fork from
@@ -460,6 +616,45 @@ the repo and merge in changes to your working branch. The maintainers
 may also contribute code directly to your branch as part of the review
 process, in which case you will need to pull the branch from your fork
 to update.</p>
+<div id="resolving-merge-conflicts" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="resolving-merge-conflicts" class="callout-inner">
+<h3 class="callout-title">Resolving Merge Conflicts</h3>
+<div class="callout-content">
+<p>After the first of the pull requests is merged, it is likely that
+your pull request can no longer be automatically merged. In some
+projects the maintainer may manage the conflict resolution themselves,
+but you can also do it yourself.</p>
+<p>Go to your fork and select the sync repository button.</p>
+<p>In your local clone switch to the main branch and pull from your
+fork:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">git</span> switch main</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a><span class="fu">git</span> pull</span></code></pre>
+</div>
+<p>Then switch back to your branch and merge main (using a normal
+three-way merge, <em>don’t</em> do a rebase merge), resolving any
+conflicts.</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="fu">git</span> switch ...</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="fu">git</span> merge main</span></code></pre>
+</div>
+<p>Then push your changes back to your fork:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="fu">git</span> push origin ...</span></code></pre>
+</div>
+</div>
+</div>
+</div>
 <p>Hopefully you will end up in a place where both you and the
 maintainers are happy with the pull request and the maintainer will
 merge the PR.</p>
@@ -484,36 +679,6 @@ in your work if it makes sense. There is some effort required to keep
 your fork current, and it is a little more complex to depend on your
 fork than the main repository, so it isn’t free. But at the end of the
 day you have solved your problem.</p>
-<div id="ai-and-open-source-contributions" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div id="ai-and-open-source-contributions" class="callout-inner">
-<h3 class="callout-title">AI and Open Source Contributions</h3>
-<div class="callout-content">
-<p>At the time of writing there is some controversy in the open-source
-community on how to handle AI-based contributions to open-source
-codebases. Some projects have enthusiastically embraced contributions
-generated by LLMs, but many projects are facing the problem of large
-numbers of low-quality AI-generated pull requests. These have to be
-triaged by human project maintainers: people spending effort to see if
-there is anything worthwhile in what they are being given; people who
-would much rather be writing new features or fixing bugs themselves.</p>
-<p>Additionally there are still some unresolved legal questions about
-the copyright status of LLM generated code, and that status varies from
-country to country.</p>
-<p>As a result many projects have very strict policies about AI use,
-including many outright bans.</p>
-<p>Make sure that if you want to contribute to a project you follow
-their guidelines. And even if you are working on a project which permits
-LLM usage, you will likely get a better reception for your contributions
-if you write any issues and pull requests yourself: at the end of the
-day you need to convince a human that your contribution is useful and to
-do that you need to <em>engage</em> with them.</p>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="section level2">
@@ -572,7 +737,7 @@ any links that you are not going to use.
       </div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/11-open-sourcing-code.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="../instructor/13-working-with-github.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -580,8 +745,8 @@ any links that you are not going to use.
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Open Sourcing Your
         </a>
-        <a class="chapter-link float-end" href="../instructor/13-working-with-github.html" rel="next">
-          Next: Working with GitHub...
+        <a class="chapter-link float-end" href="../instructor/index.html" rel="next">
+          Home
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -629,8 +794,8 @@ any links that you are not going to use.
   "url": "https://Southampton-RSG-Training.github.io/byte-sized-rse-script-open-source/instructor/12-contributing-to-open-source.html",
   "identifier": "https://Southampton-RSG-Training.github.io/byte-sized-rse-script-open-source/instructor/12-contributing-to-open-source.html",
   "dateCreated": "2026-06-16",
-  "dateModified": "2026-06-22",
-  "datePublished": "2026-06-23"
+  "dateModified": "2026-06-29",
+  "datePublished": "2026-06-29"
 }
 
   </script><script>

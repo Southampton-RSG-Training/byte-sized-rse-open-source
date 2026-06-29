@@ -270,18 +270,6 @@
 </div>
 <!--/div.accordion-flush-->
 
-<div class="accordion accordion-flush" id="accordionFlush5">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading5">
-        <a href="13-working-with-github.html">4. Working with GitHub</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
                 </div>
               </div>
             </div>
@@ -339,7 +327,7 @@
         
 <section id="aio-10-open-source-introduction"><p>Content from <a href="10-open-source-introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2026-06-22 |
+<p>Last updated on 2026-06-29 |
 
         <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/10-open-source-introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -382,11 +370,10 @@ with.</li>
 <div class="section level1">
 <h1 id="open-source-software">Open Source Software<a class="anchor" aria-label="anchor" href="#open-source-software"></a>
 </h1>
-<p>Open Source has transformed the research world over the last quarter
-century: the chances are any modern research software project relies in
-critical ways on open source software, whether it is Linux, SLURM,
-WebEngine, React, Python, R, NumPy, or PyTorch (or all of them!) or any
-of a vast array of other projects, big and small.</p>
+<p>Open Source has transformed the world of academic research over the
+last quarter century: the chances are any modern research software
+project relies in critical ways on open source software projects, both
+big and small.</p>
 <p>The power of open source is that it allows many different people and
 groups to contribute, expand, debug and improve a piece of software,
 adapting it to changing needs and use-cases as time goes on. Each user
@@ -403,13 +390,11 @@ the source code for the software with a little knowledge and some tools
 you can fix that bug or add that missing piece of functionality. And
 that often can be the end of the story: you’ve solved your problem and
 you can move on.</p>
-<p>But that may not be the end of the story. Perhaps you want to use an
-open source library in software that you are distributing. Perhaps you
-think your changes might be valuable other people with the same problems
-that you’ve run into. In these cases you may need to publish your code,
-and in some cases you might want to work with the community to
-incorporate your changes back into the original software. Or maybe you
-have code that you want to open source yourself.</p>
+<p>But there are other ways that you might want to use open source
+software: perhaps you want to use an open source library in software
+that you are distributing; perhaps you think your changes might be
+valuable other people with the same problems that you’ve run into;
+perhaps you want to make your code available as open source.</p>
 <p>In these cases you need to have an understanding of the licenses that
 protect open source code, the way that open source communities work, and
 the mechanics of contributing to someone else’s project.</p>
@@ -420,20 +405,23 @@ the mechanics of contributing to someone else’s project.</p>
 sense that it doesn’t cost anything to use, but also in the sense that
 you are able to use it however you want. However most open source
 software is not <em>completely</em> free to use.</p>
-<p>Software source is considered a creative work, and so is protected by
-copyright unless it has been placed in the public domain by the author
-or by copyright expiring. By default you can’t just copy the source code
-of a program and use it yourself. So open source software usually comes
-with some sort of <em>license</em> which describes how you can and can’t
-use it. These licenses may be simple or complex, and may or may not
-place obligations on you if you use the source in certain ways.</p>
-<p>The author or authors of a piece of software usually still control
-the copyright, and so they can choose to license the software in
+<p>Software source code is considered a creative work, and so is
+protected by copyright as soon as it is written. The only exception is
+code taht has been added to the public domain, either explicitly by the
+author or by copyright expiring. In other words, by default you can’t
+just copy the source code of a program and use it yourself. You need
+permission from the owner of the copyright to copy the code to your
+computer and to work with it. So open source software usually comes with
+some sort of <em>license</em> which describes how you can and can’t use
+it. These licenses may be simple or complex, and may or may not place
+obligations on you if you use the source in certain ways.</p>
+<p>A license doesn’t transfer any ownership rights, and so the copyright
+holder of a piece of code can choose to license the software in
 different ways and under different terms if they want to. For example it
 is somewhat common for companies to open source their code under a
 restrictive license and offer a commercial license with less restrictive
 terms.</p>
-<p>This course is going to mostly concentrate on software and software
+<p>This session is going to mostly concentrate on software and software
 licenses, but there are notions of open source for other types of
 creative work, often using the Creative Commons licenses, which have
 many similarities to open source software licenses. For example, this
@@ -458,7 +446,8 @@ License 2.0 and GPL 3, have clauses regarding patents.</p>
 open source projects may have trademark protection. This may affect how
 you can present your relationship to the software, how you use logos,
 and so on. You may need to take some care when naming your project that
-it does not conflict with prominent project names.</p>
+it does not conflict with prominent project names: you may be politely
+asked to change the name of your project.</p>
 <p>If you have serious concerns about the intellectual property
 implications of the way that you want to use a piece of software you
 should consult with a lawyer.</p>
@@ -472,16 +461,19 @@ should consult with a lawyer.</p>
 <p>There are many different open source licenses in use in the thousands
 upon thousands of open source projects. The <a href="https://opensource.org/licenses" class="external-link">Open Source Initiative has a list
 of licenses</a> that it considers to be “open source”, but even then
-there are open source licenses which don’t match its definitions which
-may be useful for research code (for example, licenses which restrict
-commercial use).</p>
-<p>But in general license fall into a few different general categories
-in terms of the <em>requirements</em> they place on use:</p>
+there are open source licenses which don’t match the OSI definitions
+which may still be useful for research code. For example, licenses which
+restrict commercial use may be acceptable for use in a research
+setting.</p>
+<p>But in general, open source licenses fall into a few different
+general categories in terms of the <em>requirements</em> they place on
+use:</p>
 <ul>
 <li>
 <strong>attribution requirements</strong>: a requirement to
-acknowledge the use of the code, often by including a license file.
-These sorts of requirements are sometimes called “permissive”.</li>
+acknowledge the use of the code, often by including a copy of the
+license in a file. These sorts of requirements are sometimes called
+“permissive”.</li>
 <li>
 <strong>source sharing requirements</strong>: a requirement to
 distribute or link to source code, usually under the same license as the
@@ -490,7 +482,7 @@ code. These sorts of requirements are often called “copyleft” or
 <li>
 <strong>usage restrictions</strong>: some limitation on the ways the
 code may be used, frequently things like restricting commercial use, or
-use in ways that they authors find unethical.</li>
+preventing use in ways that they authors find unethical.</li>
 </ul>
 <p>In general permissive licenses allow the software to be used as part
 of a closed source or commercial product. Copyleft licenses usually
@@ -507,10 +499,10 @@ stand-alone program, library, or in embedded hardware</li>
 <em>using</em> the code for particular purposes</li>
 </ul>
 <p>Most licenses are fairly easy to read, and for the most commonly used
-licenses there are often guides that give and idea of the
-<em>intent</em> of the license. Even if you are within the letter of the
-license in what you are doing, breaking the intent of the license may
-bring negative attention from the people whose work you depend on.</p>
+licenses there are often guides that give the <em>intent</em> of the
+license. Even if you are within the letter of the license in what you
+are doing, breaking the intent of the license may bring negative
+attention from the people whose work you depend on.</p>
 <p>Common examples of licenses are:</p>
 <ul>
 <li>
@@ -549,6 +541,13 @@ server-side system. The <a href="https://en.wikipedia.org/wiki/Server_Side_Publi
 Public License (SSPL)</a> is a similar license used by some projects.
 ElasticSearch, MongoDB and Redis are major projects which use this type
 of license.</li>
+<li>
+<a href="https://creativecommons.org" class="external-link"><strong>Creative
+Commons</strong></a> A collection of licenses intended for general
+creative works that allow you to pick and choose how permissive or viral
+you want the license to be. These are sometimes used for software, but
+are more common for documentation, images and similar content that might
+be part of a larger project.</li>
 </ul>
 <div id="license-example" class="callout">
 <div class="callout-square">
@@ -611,10 +610,11 @@ for the library, but also for proprietary code that uses the
 library.</p>
 <p>On the other hand, when considering commercialisation, some companies
 will dual-license their code: anyone can use the code if they agree to a
-copyleft license (which requires them to share any proprietary code),
-but they also offer a more standard paid commercial license without the
-copyleft provisions. This permits them to build a community around their
-software, but also to earn income from other commercial users.</p>
+copyleft license (which requires them to share any proprietary code if
+they share their work), but they also offer a more standard paid
+commercial license without the copyleft provisions. This permits them to
+build a community around their software, but also to earn income from
+other commercial users.</p>
 </div>
 </div>
 <div class="section level2">
@@ -695,7 +695,7 @@ under the Linux GPL license?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>You are distributing Linux in a binary form (likely along with may
 other GPL programs). You need to include the copyright notice and
@@ -732,7 +732,7 @@ acknowledge the use of the library?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You are using the BSD licensed code internally within your
 organization, so you are not distributing it and so you do not need to
@@ -765,7 +765,7 @@ GPL?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Because your users are downloading the GPL library using a package
 manager, you are not distributing the code yourself and so you have no
@@ -802,7 +802,7 @@ What are your obligations?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Because the licenses depend on copyright, they become effective
 whenever usage goes beyond fair use. A copying a few lines is probably
@@ -824,20 +824,20 @@ needed to license all your code under a GPL-compatible license.</p>
 <div id="using-open-source-for-ai-training" class="callout-inner">
 <h3 class="callout-title">Using Open Source for AI Training</h3>
 <div class="callout-content">
-<p>Open source codebases have been extensively used for training LLMs -
-this is a large part of the reason that they can produce working code.
-However there are some legal questions which are still open at the time
-of writing:</p>
+<p>Open source codebases have been extensively used for training
+language models - this is a large part of the reason that they can
+produce working code. However there are some legal questions which are
+still open at the time of writing:</p>
 <ul>
 <li><p>can code generated by an LLM be copyrighted (and therefore
 protected by licenses)? In the UK the answer is yes, but the US
 copyright office guidance is that there should be significant human
 creative input (more than a single prompt).</p></li>
-<li><p>an LLM trained on copyrighted material is likely a derived work.
-It is currently an open question about whether training an LLM on
-copyrighted source code falls under fair use, or whether any licenses on
-the software also apply to the LLM. The Free Software Foundation has
-indicated that <a href="https://www.fsf.org/blogs/licensing/2026-anthropic-settlement" class="external-link">they
+<li><p>an LLM trained on copyrighted material may be considered a
+derived work. It is currently an open question about whether training an
+LLM on copyrighted source code falls under fair use, or whether any
+licenses on the software also apply to the LLM. The Free Software
+Foundation has indicated that <a href="https://www.fsf.org/blogs/licensing/2026-anthropic-settlement" class="external-link">they
 believe that the copyleft licenses should apply to LLMs trained on
 copyleft licensed code</a> and that the model weights and related code
 should be open-sourced with appropiate licenses. This has not been
@@ -849,13 +849,13 @@ the original code and subject to copyright and licensing. At the time of
 writing courts have ruled that all examples of generated code that have
 been brought before them have been sufficiently different to not be
 copyright infringement. Neverthless, this is a risk which should be
-considered when taining on open source code.</p></li>
+considered when training on open source code.</p></li>
 </ul>
 <p>If you follow the requirements of the licenses of any code you train
-on (for example, including license text and making available any
-copyleft source files you may have used), just as if you would in a
-regular software project, then your work should be covered by the
-licensing.</p>
+on (for example, including license text, making available any copyleft
+source files you may have used, and publishing the model weights and
+your source code), just as if you would in a regular software project,
+then your work should be covered by the licensing.</p>
 </div>
 </div>
 </div>
@@ -889,7 +889,7 @@ any links that you are not going to use.
 </div>
 </div></section><section id="aio-11-open-sourcing-code"><p>Content from <a href="11-open-sourcing-code.html">Open Sourcing Your Code</a></p>
 <hr>
-<p>Last updated on 2026-06-22 |
+<p>Last updated on 2026-06-29 |
 
         <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/11-open-sourcing-code.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -974,23 +974,24 @@ case there are other things that you will likely want to do.</p>
 </h3>
 <p>The key thing you need to realise is the following:</p>
 <blockquote>
-<p>All code that is not abandoned incurs a cost just by existing.</p>
+<p>All code incurs a cost simply by existing.</p>
 </blockquote>
 <p>Bugs are discovered. Dependencies change. Operating systems evolve.
 New platforms emerge. To keep your code current and relevant (sometimes
 referred to as avoiding ‘bit-rot’) there is a constant, low-level
-maintenance effort required. The more code, the larger te effort. You
-can always stop development, and that’s a valid choice if the software
-is no longer achieving your goals, but it will get harder and harder for
-people to use your software as soon as you stop. If you know you will
-not have the time available to do maintenance it is likely not worth the
-effort of anything more than a minimal open sourcing effort.</p>
+maintenance effort required. The more code, the larger the effort.</p>
+<p>You can always stop development, and that’s a valid choice if the
+software is no longer achieving your goals, but it will get harder and
+harder for people to use your software as soon as you stop. If you know
+you will not have the time available to do maintenance it is likely not
+worth the effort of anything more than a minimal open sourcing
+effort.</p>
 <p>Fortunately there are things you can do to make the maintenance
 effort lower, many of which are already things we have discussed as best
 practices:</p>
 <ul>
-<li>good quality code: code which is easy to work with is easy to fix
-when things go wrong</li>
+<li>write high quality code: code which is easy to work with is easy to
+fix when things go wrong</li>
 <li>clear dependencies: to be broadly useful you will likely need to
 support more than a particular release of each of your dependencies, but
 you should be clear through whatever mechanism what your code expects
@@ -1004,8 +1005,8 @@ environment and perform any tasks that are needed (such as running
 tests) with a minimum of effort and fuss: you don’t want to spend a day
 getting everything set up for a 5 minute bug-fix</li>
 <li>continuous integration: going along with tests and automation is the
-ability to run them automatically in version control, both when making
-changes, but more importantly for maintenance, periodically even when
+ability to run them automatically in version control both when making
+changes and—more importantly for maintenance—periodically even when
 there are no changes. Periodic automated tests every week or month will
 notify you when they fail because of dependency or platform changes
 before it becomes an urgent issue for your project.</li>
@@ -1026,12 +1027,13 @@ more depth, and for libraries you probably want to also include
 auto-generated API documentation as a reference.</p>
 <p>The documentation should include a description of what the project’s
 goals are, what it does, how to install it, what its dependencies are,
-and examples of how to use it. Documentation should be under
-source-control, and should be able to be automatically built and
-deployed with minimum effort (ideally as part of CI). Github and similar
-systems provide the ability to host a web site associated with a
+and examples of how to use it. Documentation should be under version
+control, and should be able to be automatically built and deployed with
+minimum effort (ideally as part of continuous integration). Github and
+similar systems provide the ability to host a web site associated with a
 project, and often provide tools for automatic deployment. Other options
-include ReadTheDocs and self-hosting.</p>
+include <a href="https://about.readthedocs.com/" class="external-link">ReadTheDocs</a> and
+self-hosting (either on an institutional or personal site).</p>
 </div>
 <div class="section level3">
 <h3 id="building-awareness-and-community">Building Awareness and Community<a class="anchor" aria-label="anchor" href="#building-awareness-and-community"></a>
@@ -1087,7 +1089,7 @@ any links that you are not going to use.
 </div>
 </div></section><section id="aio-12-contributing-to-open-source"><p>Content from <a href="12-contributing-to-open-source.html">Contributing to Open Source</a></p>
 <hr>
-<p>Last updated on 2026-06-22 |
+<p>Last updated on 2026-06-29 |
 
         <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/12-contributing-to-open-source.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -1103,6 +1105,11 @@ any links that you are not going to use.
 <h3 class="card-title">Questions</h3>
 <ul>
 <li>Should I contribute to an open source project?</li>
+<li>What does the process of contributing look like?</li>
+<li>How do I contribute to an open source project hosted on GitHub?</li>
+<li>What should I do if my contribution is rejected?</li>
+<li>Are there alternatives to contributing to an open-source
+project?</li>
 </ul>
 </div>
 </div>
@@ -1112,7 +1119,9 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>…</li>
+<li>Learn how to fork an open source repository.</li>
+<li>Learn how to open a pull request using a branch on a forked
+repository.</li>
 </ul>
 </div>
 </div>
@@ -1143,10 +1152,24 @@ features, easier to use, and so on. Occasionally it may be OK to
 contribute to a project that you don’t use if there is something
 specific that you can bring to the table. For example, if you are
 managing an open source library that makes an incompatible change you
-might work with downstream projects to help migrate their code.</p>
-<p>You shouldn’t be contributing to a project that you don’t use simply
-because it’s popular or you think it will bring attention to your own
-work.</p>
+might work with downstream projects to help migrate their code.
+Contributing can also be a good way to learn things while solving real
+problems that help others.</p>
+<p>While your primary motivations for contributing to a project should
+be around the goals or subject matter of the project, open source
+software contributions have a number of secondary benefits. For example
+your contributions provide a public record of your coding ability and
+mastery of modern software development processes, which may be useful
+when applying for a position. Similarly, if the codebase is related to
+your work, it may be something that you can give as evidence of
+research-related activities. Working on a project will also helo your
+software development skills more generally—you will hone your skills on
+writing good code, in finding bugs, writing good tests, and so
+on—because your work will be being reviewed by more experienced
+developers who will give you feedback.</p>
+<p>On the other hand, you shouldn’t be contributing to a project that
+you don’t use simply because it’s popular or you think it will bring
+attention to your own work.</p>
 <div id="an-example-contribution" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1183,12 +1206,71 @@ lasting impact: a small thing that makes the world a little better.</p>
 fix for a bug, a new feature, some documentation? Whatever it is try to
 have it clear in your head before you start.</p>
 <p>Most substantial open source projects have contributor guides. They
-will have information about how to get a development environment set up,
-how to run tests, the expectations for code style and quality, and the
-mechanics of how to submit a pull request and the review process. You
-should read the contribution guide and follow its procedures. Many
-projects will ignore contributions which do not follow the guidelines,
-and may block people who repeatedly refuse to follow the guidelines.</p>
+will have information about how to set up a development environment, how
+to run tests, the expectations for code style and quality, the mechanics
+of how to submit a pull request, and the review process. You should read
+the contribution guide and follow its procedures. Many projects will
+ignore contributions which do not follow the guidelines, and may block
+people who repeatedly refuse to follow them.</p>
+<div id="ai-and-open-source-contributions" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="ai-and-open-source-contributions" class="callout-inner">
+<h3 class="callout-title">AI and Open Source Contributions</h3>
+<div class="callout-content">
+<p>At the time of writing there is some controversy in the open-source
+community on how to handle AI-based contributions to open-source
+codebases. Some projects have enthusiastically embraced contributions
+generated by large language models, but many projects are facing the
+problem of large numbers of low-quality AI-generated pull requests.
+These have to be triaged by human project maintainers: people spending
+effort to see if there is anything worthwhile in what they are being
+given; people who would much rather be writing new features or fixing
+bugs themselves.</p>
+<p>Additionally there are still some unresolved legal questions about
+the intellectual property status of LLM generated code, and that status
+varies from country to country.</p>
+<p>As a result many projects have very strict policies about AI use,
+including many outright bans.</p>
+<p>Make sure that if you want to contribute to a project you follow
+their guidelines. And even if you are working on a project which permits
+LLM usage, you will likely get a better reception for your contributions
+if you write any issues and pull requests yourself: at the end of the
+day you need to convince a human that your contribution is useful and to
+do that you need to <em>engage</em> with them.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="example-repository">Example Repository<a class="anchor" aria-label="anchor" href="#example-repository"></a>
+</h3>
+<p>The instructor will give you a link to the code repository you will
+be working with.</p>
+<p>Rather than a code, this repository contains information about the
+folk tale “Stone Soup”:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="fu"># Stone Soup</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a>The folk story <span class="co">[</span><span class="ot">Stone Soup</span><span class="co">](https://en.wikipedia.org/wiki/Stone_Soup)</span> is an excellend allegory for the way that open source software can work.  From Wikipedia:</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1" aria-label="code-block-1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1" aria-label="code-block-1-5"></a><span class="at">&gt; Some travelers come to a village, carrying nothing more than an empty cooking pot. Upon their arrival, the villagers are unwilling to share any of their food stores with the very hungry travelers. Then the travelers go to a stream and fill the pot with water, drop a large stone in it, and place it over a fire. One of the villagers becomes curious and asks what they are doing. The travelers answer that they are making "stone soup", which tastes wonderful and which they would be delighted to share with the villager, although it still needs a little bit of garnish, which they are missing, to improve the flavor.</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1" aria-label="code-block-1-6"></a><span class="at">&gt; </span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1" aria-label="code-block-1-7"></a><span class="at">&gt; The villager, who anticipates enjoying a share of the soup, does not mind parting with a few carrots, so these are added to the soup. Another villager walks by, inquiring about the pot, and the travelers again mention their stone soup which has not yet reached its full potential. More and more villagers walk by, each adding another ingredient, like potatoes, onions, cabbages, peas, celery, tomatoes, sweetcorn, meat (like chicken, pork and beef), milk, butter, salt and pepper. Finally, the stone (being inedible) is removed from the pot, and a delicious and nourishing pot of soup is enjoyed by travelers and villagers alike. Although the travelers have thus tricked the villagers into sharing their food with them, they have successfully transformed it into a tasty meal which they share with the donors.</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1" aria-label="code-block-1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1" aria-label="code-block-1-9"></a><span class="fu">## Recipe</span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1" aria-label="code-block-1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1" aria-label="code-block-1-11"></a>Place a large pot of water over low heat and add:</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1" aria-label="code-block-1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1" aria-label="code-block-1-13"></a><span class="ss">- </span>a stone</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1" aria-label="code-block-1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1" aria-label="code-block-1-15"></a>Simmer until done.  Remove stone and serve the soup.</span></code></pre>
+</div>
+<p>Clearly, the recipe needs more ingredients.</p>
+</div>
 <div class="section level3">
 <h3 id="open-an-issue">Open an Issue<a class="anchor" aria-label="anchor" href="#open-an-issue"></a>
 </h3>
@@ -1224,6 +1306,19 @@ may respond with questions to clarify what is needed and find out more
 information. This may not happen immediately: maintainers may not have
 time to respond for days or even weeks (they may be in a different time
 zone from you, and even open source maintainers take vacations!).</p>
+<div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Go to the GitHub repository and open an issue that suggests a way
+that the recipe can be improved: perhaps an ingredient to add?</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="make-a-pull-request">Make a Pull Request<a class="anchor" aria-label="anchor" href="#make-a-pull-request"></a>
@@ -1236,6 +1331,22 @@ themselves).</p>
 rights on the project repository. This means that before you start work
 you have to <em>fork</em> the repository: make your own copy of the
 repository where you will do you work.</p>
+<div id="fork-the-repository" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="fork-the-repository" class="callout-inner">
+<h3 class="callout-title">Fork the Repository</h3>
+<div class="callout-content">
+<p>On the main page of the repository, click the “Fork” button. You
+should see a page which allows you to change the name of the repository.
+Accept the default settings.</p>
+<p>You should now have a copy of the GitHub repository in your GitHUb
+account.</p>
+</div>
+</div>
+</div>
 <p>Once you have forked the repository, clone your fork to your local
 machine. Make a branch for your work (following any naming convention
 the project may have) and work on the code using your fork as you would
@@ -1244,10 +1355,67 @@ if it were your own project.</p>
 issue that you are trying to fix. If you run into more problems as you
 work, open issues for them, but don’t necessarily try to fix everything
 at once.</p>
+<div id="clone-the-repository" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="clone-the-repository" class="callout-inner">
+<h3 class="callout-title">Clone the Repository</h3>
+<div class="callout-content">
+<p>On the main page of the repository, click the “Fork” button. You
+should see a page which allows you to change the name of the repository.
+Accept the default settings.</p>
+<p>You should now have a copy of the GitHub repository in your GitHUb
+account.</p>
+</div>
+</div>
+</div>
+<div id="create-a-branch-and-make-your-changes" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="create-a-branch-and-make-your-changes" class="callout-inner">
+<h3 class="callout-title">Create a Branch and Make Your Changes</h3>
+<div class="callout-content">
+<p>Choose an issue that you will work on fromt he repository and use git
+to create a branch for your work. You might want to use your name in the
+branch name, or some other way of making sure it doesn’t conflict with
+the names that other people choose for their work.</p>
+<p>Now edit the recipe with your improvement or fixes and commit the
+changes.</p>
+</div>
+</div>
+</div>
 <p>When you think that your work is ready for review push your branch to
 <em>your</em> fork and then in GitHub open a pull request for that
 branch to the project’s repo (usually to the main development
 branch).</p>
+<div id="push-the-branch-and-open-a-pr" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="push-the-branch-and-open-a-pr" class="callout-inner">
+<h3 class="callout-title">Push the Branch and Open a PR</h3>
+<div class="callout-content">
+<p>Once you have made your updates, push the branch to your fork.</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">git</span> push origin ...</span></code></pre>
+</div>
+<p>As usual, the message gives you a GitHub URL you can open to create
+the pull request, or you can go to your fork on github and find the
+branch there to open the pull request. However, when you start to make
+the PR you will see that the target for your pull request will be the
+upstream repository.</p>
+<p>Fill in the description of your pull request, and then go to the
+upstream repository and you should see your pull request.</p>
+</div>
+</div>
+</div>
 <p>Go through the normal code review process with the maintainers. As
 with opening an issue, don’t expect an immediate response.</p>
 <p>If the process takes a while you may need to update your fork from
@@ -1255,6 +1423,45 @@ the repo and merge in changes to your working branch. The maintainers
 may also contribute code directly to your branch as part of the review
 process, in which case you will need to pull the branch from your fork
 to update.</p>
+<div id="resolving-merge-conflicts" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="resolving-merge-conflicts" class="callout-inner">
+<h3 class="callout-title">Resolving Merge Conflicts</h3>
+<div class="callout-content">
+<p>After the first of the pull requests is merged, it is likely that
+your pull request can no longer be automatically merged. In some
+projects the maintainer may manage the conflict resolution themselves,
+but you can also do it yourself.</p>
+<p>Go to your fork and select the sync repository button.</p>
+<p>In your local clone switch to the main branch and pull from your
+fork:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">git</span> switch main</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a><span class="fu">git</span> pull</span></code></pre>
+</div>
+<p>Then switch back to your branch and merge main (using a normal
+three-way merge, <em>don’t</em> do a rebase merge), resolving any
+conflicts.</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="fu">git</span> switch ...</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="fu">git</span> merge main</span></code></pre>
+</div>
+<p>Then push your changes back to your fork:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="fu">git</span> push origin ...</span></code></pre>
+</div>
+</div>
+</div>
+</div>
 <p>Hopefully you will end up in a place where both you and the
 maintainers are happy with the pull request and the maintainer will
 merge the PR.</p>
@@ -1280,36 +1487,6 @@ in your work if it makes sense. There is some effort required to keep
 your fork current, and it is a little more complex to depend on your
 fork than the main repository, so it isn’t free. But at the end of the
 day you have solved your problem.</p>
-<div id="ai-and-open-source-contributions" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div id="ai-and-open-source-contributions" class="callout-inner">
-<h3 class="callout-title">AI and Open Source Contributions</h3>
-<div class="callout-content">
-<p>At the time of writing there is some controversy in the open-source
-community on how to handle AI-based contributions to open-source
-codebases. Some projects have enthusiastically embraced contributions
-generated by LLMs, but many projects are facing the problem of large
-numbers of low-quality AI-generated pull requests. These have to be
-triaged by human project maintainers: people spending effort to see if
-there is anything worthwhile in what they are being given; people who
-would much rather be writing new features or fixing bugs themselves.</p>
-<p>Additionally there are still some unresolved legal questions about
-the copyright status of LLM generated code, and that status varies from
-country to country.</p>
-<p>As a result many projects have very strict policies about AI use,
-including many outright bans.</p>
-<p>Make sure that if you want to contribute to a project you follow
-their guidelines. And even if you are working on a project which permits
-LLM usage, you will likely get a better reception for your contributions
-if you write any issues and pull requests yourself: at the end of the
-day you need to convince a human that your contribution is useful and to
-do that you need to <em>engage</em> with them.</p>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="section level2">
@@ -1364,167 +1541,6 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
-</div></section><section id="aio-13-working-with-github"><p>Content from <a href="13-working-with-github.html">Working with GitHub</a></p>
-<hr>
-<p>Last updated on 2026-06-22 |
-
-        <a href="https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source/edit/main/episodes/13-working-with-github.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul>
-<li>How do I contribute to an open source project hosted on GitHub?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul>
-<li>Learn how to fork an open source repository.</li>
-<li>Learn how to open a pull request using a branch on a forked
-repository.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section level1">
-<h1 id="activity">Activity<a class="anchor" aria-label="anchor" href="#activity"></a>
-</h1>
-<p>In this activity we’ll work through the steps needed to make a pull
-request against a third-party open source project.</p>
-<div class="section level2">
-<h2 id="example-repository">Example Repository<a class="anchor" aria-label="anchor" href="#example-repository"></a>
-</h2>
-<p>The instructor will give you a link to the code repository you will
-be working with.</p>
-<p>Rather than a code, this repository contains information about the
-folk tale “Stone Soup”:</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="fu"># Stone Soup</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a>The folk story <span class="co">[</span><span class="ot">Stone Soup</span><span class="co">](https://en.wikipedia.org/wiki/Stone_Soup)</span> is an excellend allegory for the way that open source software can work.  From Wikipedia:</span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1" aria-label="code-block-1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1" aria-label="code-block-1-5"></a><span class="at">&gt; Some travelers come to a village, carrying nothing more than an empty cooking pot. Upon their arrival, the villagers are unwilling to share any of their food stores with the very hungry travelers. Then the travelers go to a stream and fill the pot with water, drop a large stone in it, and place it over a fire. One of the villagers becomes curious and asks what they are doing. The travelers answer that they are making "stone soup", which tastes wonderful and which they would be delighted to share with the villager, although it still needs a little bit of garnish, which they are missing, to improve the flavor.</span></span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1" aria-label="code-block-1-6"></a><span class="at">&gt; </span></span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1" aria-label="code-block-1-7"></a><span class="at">&gt; The villager, who anticipates enjoying a share of the soup, does not mind parting with a few carrots, so these are added to the soup. Another villager walks by, inquiring about the pot, and the travelers again mention their stone soup which has not yet reached its full potential. More and more villagers walk by, each adding another ingredient, like potatoes, onions, cabbages, peas, celery, tomatoes, sweetcorn, meat (like chicken, pork and beef), milk, butter, salt and pepper. Finally, the stone (being inedible) is removed from the pot, and a delicious and nourishing pot of soup is enjoyed by travelers and villagers alike. Although the travelers have thus tricked the villagers into sharing their food with them, they have successfully transformed it into a tasty meal which they share with the donors.</span></span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1" aria-label="code-block-1-8"></a></span>
-<span id="cb1-9"><a href="#cb1-9" tabindex="-1" aria-label="code-block-1-9"></a><span class="fu">## Recipe</span></span>
-<span id="cb1-10"><a href="#cb1-10" tabindex="-1" aria-label="code-block-1-10"></a></span>
-<span id="cb1-11"><a href="#cb1-11" tabindex="-1" aria-label="code-block-1-11"></a>Place a large pot of water over low heat and add:</span>
-<span id="cb1-12"><a href="#cb1-12" tabindex="-1" aria-label="code-block-1-12"></a></span>
-<span id="cb1-13"><a href="#cb1-13" tabindex="-1" aria-label="code-block-1-13"></a><span class="ss">- </span>a stone</span>
-<span id="cb1-14"><a href="#cb1-14" tabindex="-1" aria-label="code-block-1-14"></a></span>
-<span id="cb1-15"><a href="#cb1-15" tabindex="-1" aria-label="code-block-1-15"></a>Simmer until done.  Remove stone and serve the soup.</span></code></pre>
-</div>
-<p>Clearly, the recipe needs more ingredients.</p>
-<div class="section level3">
-<h3 id="open-an-issue">Open an Issue<a class="anchor" aria-label="anchor" href="#open-an-issue"></a>
-</h3>
-<p>Go to the GitHub repository and open an issue that suggests a way
-that the recipe can be improved: perhaps an ingredient to add?</p>
-</div>
-<div class="section level3">
-<h3 id="fork-the-repository">Fork the Repository<a class="anchor" aria-label="anchor" href="#fork-the-repository"></a>
-</h3>
-<p>On the main page of the repository, click the “Fork” button. You
-should see a page which allows you to change the name of the repository.
-Accept the default settings.</p>
-<p>You should now have a copy of the GitHub repository in your GitHUb
-account.</p>
-</div>
-<div class="section level3">
-<h3 id="clone-the-repository">Clone the Repository<a class="anchor" aria-label="anchor" href="#clone-the-repository"></a>
-</h3>
-<p>In the “Code” button on <em>your</em> fork of the repository, copy
-the URL. Change directory to your root directory and then paste it into
-a clone command in your shell:</p>
-<div class="codewrapper sourceCode" id="cb2">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="bu">cd</span></span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="fu">git</span> clone .../stone-soup-example</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a><span class="bu">cd</span> stone-soup-example</span></code></pre>
-</div>
-</div>
-<div class="section level3">
-<h3 id="create-a-branch-and-make-your-changes">Create a Branch and Make Your Changes<a class="anchor" aria-label="anchor" href="#create-a-branch-and-make-your-changes"></a>
-</h3>
-<p>Choose an issue that you will work on and use git to create a branch
-for your work. You might want to use your name in the branch name, or
-some other way of making sure it doesn’t conflict with the names that
-other people choose for their work.</p>
-<p>Now edit the recipe with your improvement or fixes and commit the
-changes.</p>
-</div>
-<div class="section level3">
-<h3 id="push-the-branch-and-open-a-pr">Push the Branch and Open a PR<a class="anchor" aria-label="anchor" href="#push-the-branch-and-open-a-pr"></a>
-</h3>
-<p>Once you have made your updates, push the branch to your fork.</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="fu">git</span> push origin ...</span></code></pre>
-</div>
-<p>As usual, the message gives you a GitHub URL you can open to create
-the pull request, or you can go to your fork on github and find the
-branch there to open the pull request. However, when you start to make
-the PR you will see that the target for your pull request will be the
-upstream repository.</p>
-<p>Fill in the description of your pull request, and then go to the
-upstream repository and you should see your pull request.</p>
-</div>
-<div class="section level3">
-<h3 id="resolving-merge-conflicts">Resolving Merge Conflicts<a class="anchor" aria-label="anchor" href="#resolving-merge-conflicts"></a>
-</h3>
-<p>After the first of the pull requests is merged, it is likely that
-your pull request can no longer be automatically merged. In some
-projects the maintainer may manage the conflict resolution themselves,
-but you can also do it yourself.</p>
-<p>Go to your fork and select the sync repository button.</p>
-<p>In your local clone switch to the main branch and pull from your
-fork:</p>
-<div class="codewrapper sourceCode" id="cb4">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="fu">git</span> switch main</span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="fu">git</span> pull</span></code></pre>
-</div>
-<p>Then switch back to your branch and merge main (using a normal
-three-way merge, <em>don’t</em> do a rebase merge), resolving any
-conflicts.</p>
-<div class="codewrapper sourceCode" id="cb5">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="fu">git</span> switch ...</span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a><span class="fu">git</span> merge main</span></code></pre>
-</div>
-<p>Then push your changes back to your fork:</p>
-<div class="codewrapper sourceCode" id="cb6">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="fu">git</span> push origin ...</span></code></pre>
-</div>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</div>
-</div>
 </div></section>
 </div>
     </main>
@@ -1575,8 +1591,8 @@ any links that you are not going to use.
   "url": "https://Southampton-RSG-Training.github.io/byte-sized-rse-script-open-source/instructor/aio.html",
   "identifier": "https://Southampton-RSG-Training.github.io/byte-sized-rse-script-open-source/instructor/aio.html",
   "dateCreated": "2026-06-16",
-  "dateModified": "2026-06-23",
-  "datePublished": "2026-06-23"
+  "dateModified": "2026-06-29",
+  "datePublished": "2026-06-29"
 }
 
   </script><script>
