@@ -45,17 +45,19 @@ However, you may wish to release open source code in a more substantial, re-usab
 
 The key thing you need to realise is the following:
 
-> All code that is not abandoned incurs a cost just by existing.
+> All code incurs a cost simply by existing.
 
-Bugs are discovered. Dependencies change. Operating systems evolve. New platforms emerge. To keep your code current and relevant (sometimes referred to as avoiding 'bit-rot') there is a constant, low-level maintenance effort required.  The more code, the larger te effort.  You can always stop development, and that's a valid choice if the software is no longer achieving your goals, but it will get harder and harder for people to use your software as soon as you stop.  If you know you will not have the time available to do maintenance it is likely not worth the effort of anything more than a minimal open sourcing effort.
+Bugs are discovered. Dependencies change. Operating systems evolve. New platforms emerge. To keep your code current and relevant (sometimes referred to as avoiding 'bit-rot') there is a constant, low-level maintenance effort required.  The more code, the larger the effort.
+
+You can always stop development, and that's a valid choice if the software is no longer achieving your goals, but it will get harder and harder for people to use your software as soon as you stop.  If you know you will not have the time available to do maintenance it is likely not worth the effort of anything more than a minimal open sourcing effort.
 
 Fortunately there are things you can do to make the maintenance effort lower, many of which are already things we have discussed as best practices:
 
-- good quality code: code which is easy to work with is easy to fix when things go wrong
+- write high quality code: code which is easy to work with is easy to fix when things go wrong
 - clear dependencies: to be broadly useful you will likely need to support more than a particular release of each of your dependencies, but you should be clear through whatever mechanism what your code expects the environment it runs in to look like.
 - tests: if your code has good tests then it is easier to confidently make any changes needed when a dependency changes its API or you need to port it to a new platform
 - automation: because maintenance is something you will only do occasionally, you want to make it easy to get a working development environment and perform any tasks that are needed (such as running tests) with a minimum of effort and fuss: you don't want to spend a day getting everything set up for a 5 minute bug-fix
-- continuous integration: going along with tests and automation is the ability to run them automatically in version control, both when making changes, but more importantly for maintenance, periodically even when there are no changes. Periodic automated tests every week or month will notify you when they fail because of dependency or platform changes before it becomes an urgent issue for your project.
+- continuous integration: going along with tests and automation is the ability to run them automatically in version control both when making changes and—more importantly for maintenance—periodically even when there are no changes. Periodic automated tests every week or month will notify you when they fail because of dependency or platform changes before it becomes an urgent issue for your project.
 
 None of these make the maintenance effort go away, but they help manage it, and will pay-off in the long-term.
 
@@ -65,7 +67,7 @@ Once you have working, good quality software with tests, you need to start focus
 
 The minimum is a "README" file, and for small packages this may be enough.  For larger packages you will want to write documentation with more depth, and for libraries you probably want to also include auto-generated API documentation as a reference.
 
-The documentation should include a description of what the project's goals are, what it does, how to install it, what its dependencies are, and examples of how to use it.  Documentation should be under source-control, and should be able to be automatically built and deployed with minimum effort (ideally as part of CI).  Github and similar systems provide the ability to host a web site associated with a project, and often provide tools for automatic deployment. Other options include ReadTheDocs and self-hosting.
+The documentation should include a description of what the project's goals are, what it does, how to install it, what its dependencies are, and examples of how to use it.  Documentation should be under version control, and should be able to be automatically built and deployed with minimum effort (ideally as part of continuous integration).  Github and similar systems provide the ability to host a web site associated with a project, and often provide tools for automatic deployment. Other options include [ReadTheDocs](https://about.readthedocs.com/) and self-hosting (either on an institutional or personal site).
 
 ### Building Awareness and Community
 
