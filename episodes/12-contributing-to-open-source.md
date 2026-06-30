@@ -31,7 +31,7 @@ It is important when thinking about contributing to open source projects to keep
 
 There are many reasons to contribute to open source software projects. Ideally it is because you use the project and want to see it become more useful to you or people that you work with: fewer bugs, more features, easier to use, and so on.  Occasionally it may be OK to contribute to a project that you don't use if there is something specific that you can bring to the table.  For example, if you are managing an open source library that makes an incompatible change you might work with downstream projects to help migrate their code. Contributing can also be a good way to learn things while solving real problems that help others.
 
-While your primary motivations for contributing to a project should be around the goals or subject matter of the project, open source software contributions have a number of secondary benefits. For example your contributions provide a public record of your coding ability and mastery of modern software development processes, which may be useful when applying for a position. Similarly, if the codebase is related to your work, it may be something that you can give as evidence of research-related activities. Working on a project will also helo your software development skills more generally—you will hone your skills on writing good code, in finding bugs, writing good tests, and so on—because your work will be being reviewed by more experienced developers who will give you feedback.
+While your primary motivations for contributing to a project should be around the goals or subject matter of the project, open source software contributions have a number of secondary benefits. For example your contributions provide a public record of your coding ability and mastery of modern software development processes, which may be useful when applying for a position. Similarly, if the codebase is related to your work, it may be something that you can give as evidence of research-related activities. Working on a project will also help your software development skills more generally—you will hone your skills on writing good code, in finding bugs, writing good tests, and so on—because your work will be being reviewed by more experienced developers who will give you feedback.
 
 On the other hand, you shouldn't be contributing to a project that you don't use simply because it's popular or you think it will bring attention to your own work.
 
@@ -182,7 +182,7 @@ cd byte-sized-rse-open-source-example
 
 #### Create a Branch and Make Your Changes
 
-Choose an issue that you will work on fromt he repository and use git to create a branch for your work.  You might want to use your name in the branch name, or some other way of making sure it doesn't conflict with the names that other people choose for their work.
+Choose an issue that you will work on from the repository and use git to create a branch for your work.  You might want to use your name in the branch name, or some other way of making sure it doesn't conflict with the names that other people choose for their work.
 
 ``` bash
 git checkout -b enhance-recipe-[your_github_id]
@@ -265,7 +265,7 @@ Sometimes a contribution to a project is not the right way to share the work tha
 
 For example, a general-purpose machine learning library is likely to have a selection of the most general and well-proven algorithms, and won't likely accept new algorithms unless they also fall into the category.  If you have developed a new technique as part of your research, then it is unlikely that a contribution with that algorithm would be accepted.
 
-In this case, if you were to create your own library which depends on an the general purpose library, implementing your algorithm but using its conventions, using its tools, and following its API, then your library is compatibile with the general-purpose library and familiar to its users.  If you design things well, you may be able to make your algorithm a drop-in replacement for the general-purpose algorithms.
+In this case, if you were to create your own library which depends on an the general purpose library, implementing your algorithm but using its conventions, using its tools, and following its API, then your library is compatible with the general-purpose library and familiar to its users.  If you design things well, you may be able to make your algorithm a drop-in replacement for the general-purpose algorithms.
 
 Working in this sort of way, you are more likely to get users who are familiar with the open source library you are working with to use your code. And if your algorithm gains popularity and adoption then it will be easier to integrate it into the project you are using later on.
 
@@ -276,7 +276,7 @@ Working in this sort of way, you are more likely to get users who are familiar w
 - follow the guidelines and conventions of any project that you are planning to work with
 - to make a contribution: make a fork of the project, clone it, and work on a branch, then push the branch and make a pull request
 - understand that your vision and the projects visions may not agree, and that contributions may not be accepted
-- consider alternatives to directo contribution to a project
+- consider alternatives to direct contribution to a project
 
 :::
 
