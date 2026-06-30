@@ -1,6 +1,6 @@
 ---
 title: "Contributing to Open Source"
-teaching: 15
+teaching: 45
 exercises: 0
 ---
 
@@ -83,7 +83,7 @@ Ensure you have your copy of the template repository at https://github.com/South
 
 :::
 
-Rather than a code, this repository contains information about the folk tale "Stone Soup":
+Rather than code, this repository contains information about the folk tale "Stone Soup":
 
 ``` markdown
 # Stone Soup
