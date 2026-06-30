@@ -4,7 +4,7 @@ teaching: 15
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions
+::: questions
 
 - Should I contribute to an open source project?
 - What does the process of contributing look like?
@@ -12,14 +12,14 @@ exercises: 0
 - What should I do if my contribution is rejected?
 - Are there alternatives to contributing to an open-source project?
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::: objectives
+::: objectives
 
 - Learn how to fork an open source repository.
 - Learn how to open a pull request using a branch on a forked repository.
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 # Contributing to Open Source
 
@@ -31,11 +31,11 @@ It is important when thinking about contributing to open source projects to keep
 
 There are many reasons to contribute to open source software projects. Ideally it is because you use the project and want to see it become more useful to you or people that you work with: fewer bugs, more features, easier to use, and so on.  Occasionally it may be OK to contribute to a project that you don't use if there is something specific that you can bring to the table.  For example, if you are managing an open source library that makes an incompatible change you might work with downstream projects to help migrate their code. Contributing can also be a good way to learn things while solving real problems that help others.
 
-While your primary motivations for contributing to a project should be around the goals or subject matter of the project, open source software contributions have a number of secondary benefits. For example your contributions provide a public record of your coding ability and mastery of modern software development processes, which may be useful when applying for a position. Similarly, if the codebase is related to your work, it may be something that you can give as evidence of research-related activities. Working on a project will also helo your software development skills more generally—you will hone your skills on writing good code, in finding bugs, writing good tests, and so on—because your work will be being reviewed by more experienced developers who will give you feedback.
+While your primary motivations for contributing to a project should be around the goals or subject matter of the project, open source software contributions have a number of secondary benefits. For example your contributions provide a public record of your coding ability and mastery of modern software development processes, which may be useful when applying for a position. Similarly, if the codebase is related to your work, it may be something that you can give as evidence of research-related activities. Working on a project will also help your software development skills more generally—you will hone your skills on writing good code, in finding bugs, writing good tests, and so on—because your work will be being reviewed by more experienced developers who will give you feedback.
 
 On the other hand, you shouldn't be contributing to a project that you don't use simply because it's popular or you think it will bring attention to your own work.
 
-::::::::::::::::: callout
+::: callout
 
 ## An Example Contribution
 
@@ -51,7 +51,7 @@ Writing the fix took less than half an hour, but likely saved anyone who was wan
 
 The take-away is that even tiny contributions have value and can have lasting impact: a small thing that makes the world a little better.
 
-:::::::::::::::::::::::::
+:::
 
 ## How to Contribute
 
@@ -59,7 +59,7 @@ You should start with an idea of what it is that you need: is it a fix for a bug
 
 Most substantial open source projects have contributor guides.  They will have information about how to set up a development environment, how to run tests, the expectations for code style and quality, the mechanics of how to submit a pull request, and the review process.  You should read the contribution guide and follow its procedures. Many projects will ignore contributions which do not follow the guidelines, and may block people who repeatedly refuse to follow them.
 
-::::::::::::::::: callout
+::: callout
 
 ## AI and Open Source Contributions
 
@@ -71,22 +71,48 @@ As a result many projects have very strict policies about AI use, including many
 
 Make sure that if you want to contribute to a project you follow their guidelines. And even if you are working on a project which permits LLM usage, you will likely get a better reception for your contributions if you write any issues and pull requests yourself: at the end of the day you need to convince a human that your contribution is useful and to do that you need to *engage* with them.
 
-:::::::::::::::::::::::::
+:::
 
 ### Example Repository
 
 The instructor will give you a link to the code repository you will be working with.
+
+::: instructor
+
+Ensure you have your copy of the template repository at https://github.com/Southampton-RSG-Training/byte-sized-rse-open-source-example and give the students the URL to *your* copy of the template.
+
+:::
 
 Rather than a code, this repository contains information about the folk tale "Stone Soup":
 
 ``` markdown
 # Stone Soup
 
-The folk story [Stone Soup](https://en.wikipedia.org/wiki/Stone_Soup) is an excellend allegory for the way that open source software can work.  From Wikipedia:
+The folk story [Stone Soup](https://en.wikipedia.org/wiki/Stone_Soup) is an
+excellent allegory for the way that open source software can work.  From
+Wikipedia:
 
-> Some travelers come to a village, carrying nothing more than an empty cooking pot. Upon their arrival, the villagers are unwilling to share any of their food stores with the very hungry travelers. Then the travelers go to a stream and fill the pot with water, drop a large stone in it, and place it over a fire. One of the villagers becomes curious and asks what they are doing. The travelers answer that they are making "stone soup", which tastes wonderful and which they would be delighted to share with the villager, although it still needs a little bit of garnish, which they are missing, to improve the flavor.
+> Some travelers come to a village, carrying nothing more than an empty cooking
+> pot. Upon their arrival, the villagers are unwilling to share any of their
+> food stores with the very hungry travelers. Then the travelers go to a stream
+> and fill the pot with water, drop a large stone in it, and place it over a
+> fire. One of the villagers becomes curious and asks what they are doing. The
+> travelers answer that they are making "stone soup", which tastes wonderful
+> and which they would be delighted to share with the villager, although it
+> still needs a little bit of garnish, which they are missing, to improve the
+> flavor.
 > 
-> The villager, who anticipates enjoying a share of the soup, does not mind parting with a few carrots, so these are added to the soup. Another villager walks by, inquiring about the pot, and the travelers again mention their stone soup which has not yet reached its full potential. More and more villagers walk by, each adding another ingredient, like potatoes, onions, cabbages, peas, celery, tomatoes, sweetcorn, meat (like chicken, pork and beef), milk, butter, salt and pepper. Finally, the stone (being inedible) is removed from the pot, and a delicious and nourishing pot of soup is enjoyed by travelers and villagers alike. Although the travelers have thus tricked the villagers into sharing their food with them, they have successfully transformed it into a tasty meal which they share with the donors.
+> The villager, who anticipates enjoying a share of the soup, does not mind
+> parting with a few carrots, so these are added to the soup. Another villager
+> walks by, inquiring about the pot, and the travelers again mention their
+> stone soup which has not yet reached its full potential. More and more
+> villagers walk by, each adding another ingredient, like potatoes, onions,
+> cabbages, peas, celery, tomatoes, sweetcorn, meat (like chicken, pork and
+> beef), milk, butter, salt and pepper. Finally, the stone (being inedible) is
+> removed from the pot, and a delicious and nourishing pot of soup is enjoyed
+> by travelers and villagers alike. Although the travelers have thus tricked
+> the villagers into sharing their food with them, they have successfully
+> transformed it into a tasty meal which they share with the donors.
 
 ## Recipe
 
@@ -131,7 +157,7 @@ Unlike your own projects, you almost certainly don't have commit rights on the p
 
 On the main page of the repository, click the "Fork" button.  You should see a page which allows you to change the name of the repository. Accept the default settings.
 
-You should now have a copy of the GitHub repository in your GitHUb account.
+You should now have a copy of the GitHub repository in your GitHub account.
 
 :::
 
@@ -143,17 +169,24 @@ Try to keep your changes small and self-contained and focused on the issue that 
 
 #### Clone the Repository
 
-On the main page of the repository, click the "Fork" button.  You should see a page which allows you to change the name of the repository. Accept the default settings.
+On the "Code" button on *your* fork of the repository, copy the SSH URL. Change directory to your root directory and then paste it into a clone command in your shell:
 
-You should now have a copy of the GitHub repository in your GitHUb account.
-
+``` bash
+cd
+git clone git@github.com:[your_github_id]/byte-sized-rse-open-source-example.git
+cd byte-sized-rse-open-source-example
+```
 :::
 
 ::: challenge
 
 #### Create a Branch and Make Your Changes
 
-Choose an issue that you will work on fromt he repository and use git to create a branch for your work.  You might want to use your name in the branch name, or some other way of making sure it doesn't conflict with the names that other people choose for their work.
+Choose an issue that you will work on from the repository and use git to create a branch for your work.  You might want to use your name in the branch name, or some other way of making sure it doesn't conflict with the names that other people choose for their work.
+
+``` bash
+git checkout -b enhance-recipe-[your_github_id]
+```
 
 Now edit the recipe with your improvement or fixes and commit the changes.
 
@@ -168,7 +201,7 @@ When you think that your work is ready for review push your branch to *your* for
 Once you have made your updates, push the branch to your fork.
 
 ``` bash
-git push origin ...
+git push origin enhance-recipe-[your_github_id]
 ```
 
 As usual, the message gives you a GitHub URL you can open to create the pull request, or you can go to your fork on github and find the branch there to open the pull request.  However, when you start to make the PR you will see that the target for your pull request will be the upstream repository.
@@ -178,6 +211,12 @@ Fill in the description of your pull request, and then go to the upstream reposi
 :::
 
 Go through the normal code review process with the maintainers. As with opening an issue, don't expect an immediate response.
+
+::: instructor
+
+Pick a PR that will likely have conflicts with other PRs and merge it.
+
+:::
 
 If the process takes a while you may need to update your fork from the repo and merge in changes to your working branch.  The maintainers may also contribute code directly to your branch as part of the review process, in which case you will need to pull the branch from your fork to update.
 
@@ -197,13 +236,13 @@ git pull
 
 Then switch back to your branch and merge main (using a normal three-way merge, *don't* do a rebase merge), resolving any conflicts.
 ``` bash
-git switch ...
+git switch enhance-recipe-[your_github_id]
 git merge main
 ```
 
 Then push your changes back to your fork:
 ``` bash
-git push origin ...
+git push origin enhance-recipe-[your_github_id]
 ```
 
 :::
@@ -226,18 +265,18 @@ Sometimes a contribution to a project is not the right way to share the work tha
 
 For example, a general-purpose machine learning library is likely to have a selection of the most general and well-proven algorithms, and won't likely accept new algorithms unless they also fall into the category.  If you have developed a new technique as part of your research, then it is unlikely that a contribution with that algorithm would be accepted.
 
-In this case, if you were to create your own library which depends on an the general purpose library, implementing your algorithm but using its conventions, using its tools, and following its API, then your library is compatibile with the general-purpose library and familiar to its users.  If you design things well, you may be able to make your algorithm a drop-in replacement for the general-purpose algorithms.
+In this case, if you were to create your own library which depends on an the general purpose library, implementing your algorithm but using its conventions, using its tools, and following its API, then your library is compatible with the general-purpose library and familiar to its users.  If you design things well, you may be able to make your algorithm a drop-in replacement for the general-purpose algorithms.
 
 Working in this sort of way, you are more likely to get users who are familiar with the open source library you are working with to use your code. And if your algorithm gains popularity and adoption then it will be easier to integrate it into the project you are using later on.
 
-::::::::::::::::: keypoints
+::: keypoints
 
 - be mindful of the constraints that face developers of open source software
 - be clear to yourself on why you want to contribute to an open source project
 - follow the guidelines and conventions of any project that you are planning to work with
 - to make a contribution: make a fork of the project, clone it, and work on a branch, then push the branch and make a pull request
 - understand that your vision and the projects visions may not agree, and that contributions may not be accepted
-- consider alternatives to directo contribution to a project
+- consider alternatives to direct contribution to a project
 
-:::::::::::::::::::::::::::
+:::
 
