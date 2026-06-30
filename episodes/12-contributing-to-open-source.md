@@ -77,6 +77,12 @@ Make sure that if you want to contribute to a project you follow their guideline
 
 The instructor will give you a link to the code repository you will be working with.
 
+::: instructor
+
+Ensure you have your copy of the template repository at https://github.com/Southampton-RSG-Training/byte-sized-rse-open-source-example and give the students the URL to *your* copy of the template.
+
+:::
+
 Rather than a code, this repository contains information about the folk tale "Stone Soup":
 
 ``` markdown
@@ -151,7 +157,7 @@ Unlike your own projects, you almost certainly don't have commit rights on the p
 
 On the main page of the repository, click the "Fork" button.  You should see a page which allows you to change the name of the repository. Accept the default settings.
 
-You should now have a copy of the GitHub repository in your GitHUb account.
+You should now have a copy of the GitHub repository in your GitHub account.
 
 :::
 
@@ -205,6 +211,12 @@ Fill in the description of your pull request, and then go to the upstream reposi
 :::
 
 Go through the normal code review process with the maintainers. As with opening an issue, don't expect an immediate response.
+
+::: instructor
+
+Pick a PR that will likely have conflicts with other PRs and merge it.
+
+:::
 
 If the process takes a while you may need to update your fork from the repo and merge in changes to your working branch.  The maintainers may also contribute code directly to your branch as part of the review process, in which case you will need to pull the branch from your fork to update.
 
