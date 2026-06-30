@@ -23,7 +23,7 @@ exercises: 0
 
 As a researcher there are many reasons to open-source your code. In particular, if it is useful within your research community it may have a very high impact, potentially more than any paper that you write:
 
-![Array programming with NumPy paper in Nature](numpy_nature.png)
+![*Array programming with NumPy* paper in Nature](numpy_nature.png)
 
 To successfully release open source code takes effort and perseverance, and even with that there is no guarantee that your project will catch the attention of a community or that recognition of the impact will come quickly.  The NumPy paper in Nature was published 15 years after NumPy was first released, and 25 years after Numeric, the predecessor of NumPy, was released; and for many of the authors NumPy was a significant, unpaid and unacknowledged part of their work for years.
 
@@ -39,7 +39,7 @@ This may be good enough for code associated with a paper that you are unlikely t
 
 ## Open Sourcing Best Practices
 
-However, you may wish to release open source code in a more substantial, re-usable form, either as a library or an application.  This should be an intentional decision with an understanding of the effort required and how it alings with you research and career goals.  In that case there are other things that you will likely want to do.
+However, you may wish to release open source code in a more substantial, re-usable form, either as a library or an application.  This should be an intentional decision with an understanding of the effort required and how it aligns with you research and career goals.  In that case there are other things that you will likely want to do.
 
 ### Maintenance
 
@@ -83,7 +83,7 @@ Community also means things like codes of conduct, contribution guides, contribu
 
 ::::::::::::::::: keypoints
 
-- if you decide to open source a project, be mindful of the effort requird to do it well
+- if you decide to open source a project, be mindful of the effort required to do it well
 - you should follow software development best practices with open source software
 - documentation is important for success
 - if your are successful, you will be managing a community, and all that goes with that
