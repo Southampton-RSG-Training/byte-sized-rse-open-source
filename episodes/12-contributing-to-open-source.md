@@ -82,11 +82,31 @@ Rather than a code, this repository contains information about the folk tale "St
 ``` markdown
 # Stone Soup
 
-The folk story [Stone Soup](https://en.wikipedia.org/wiki/Stone_Soup) is an excellend allegory for the way that open source software can work.  From Wikipedia:
+The folk story [Stone Soup](https://en.wikipedia.org/wiki/Stone_Soup) is an
+excellent allegory for the way that open source software can work.  From
+Wikipedia:
 
-> Some travelers come to a village, carrying nothing more than an empty cooking pot. Upon their arrival, the villagers are unwilling to share any of their food stores with the very hungry travelers. Then the travelers go to a stream and fill the pot with water, drop a large stone in it, and place it over a fire. One of the villagers becomes curious and asks what they are doing. The travelers answer that they are making "stone soup", which tastes wonderful and which they would be delighted to share with the villager, although it still needs a little bit of garnish, which they are missing, to improve the flavor.
+> Some travelers come to a village, carrying nothing more than an empty cooking
+> pot. Upon their arrival, the villagers are unwilling to share any of their
+> food stores with the very hungry travelers. Then the travelers go to a stream
+> and fill the pot with water, drop a large stone in it, and place it over a
+> fire. One of the villagers becomes curious and asks what they are doing. The
+> travelers answer that they are making "stone soup", which tastes wonderful
+> and which they would be delighted to share with the villager, although it
+> still needs a little bit of garnish, which they are missing, to improve the
+> flavor.
 > 
-> The villager, who anticipates enjoying a share of the soup, does not mind parting with a few carrots, so these are added to the soup. Another villager walks by, inquiring about the pot, and the travelers again mention their stone soup which has not yet reached its full potential. More and more villagers walk by, each adding another ingredient, like potatoes, onions, cabbages, peas, celery, tomatoes, sweetcorn, meat (like chicken, pork and beef), milk, butter, salt and pepper. Finally, the stone (being inedible) is removed from the pot, and a delicious and nourishing pot of soup is enjoyed by travelers and villagers alike. Although the travelers have thus tricked the villagers into sharing their food with them, they have successfully transformed it into a tasty meal which they share with the donors.
+> The villager, who anticipates enjoying a share of the soup, does not mind
+> parting with a few carrots, so these are added to the soup. Another villager
+> walks by, inquiring about the pot, and the travelers again mention their
+> stone soup which has not yet reached its full potential. More and more
+> villagers walk by, each adding another ingredient, like potatoes, onions,
+> cabbages, peas, celery, tomatoes, sweetcorn, meat (like chicken, pork and
+> beef), milk, butter, salt and pepper. Finally, the stone (being inedible) is
+> removed from the pot, and a delicious and nourishing pot of soup is enjoyed
+> by travelers and villagers alike. Although the travelers have thus tricked
+> the villagers into sharing their food with them, they have successfully
+> transformed it into a tasty meal which they share with the donors.
 
 ## Recipe
 
@@ -143,10 +163,13 @@ Try to keep your changes small and self-contained and focused on the issue that 
 
 #### Clone the Repository
 
-On the main page of the repository, click the "Fork" button.  You should see a page which allows you to change the name of the repository. Accept the default settings.
+On the "Code" button on *your* fork of the repository, copy the SSH URL. Change directory to your root directory and then paste it into a clone command in your shell:
 
-You should now have a copy of the GitHub repository in your GitHUb account.
-
+``` bash
+cd
+git clone git@github.com:[your_github_id]/byte-sized-rse-open-source-example.git
+cd byte-sized-rse-open-source-example
+```
 :::
 
 ::: challenge
@@ -154,6 +177,10 @@ You should now have a copy of the GitHub repository in your GitHUb account.
 #### Create a Branch and Make Your Changes
 
 Choose an issue that you will work on fromt he repository and use git to create a branch for your work.  You might want to use your name in the branch name, or some other way of making sure it doesn't conflict with the names that other people choose for their work.
+
+``` bash
+git checkout -b enhance-recipe-[your_github_id]
+```
 
 Now edit the recipe with your improvement or fixes and commit the changes.
 
@@ -168,7 +195,7 @@ When you think that your work is ready for review push your branch to *your* for
 Once you have made your updates, push the branch to your fork.
 
 ``` bash
-git push origin ...
+git push origin enhance-recipe-[your_github_id]
 ```
 
 As usual, the message gives you a GitHub URL you can open to create the pull request, or you can go to your fork on github and find the branch there to open the pull request.  However, when you start to make the PR you will see that the target for your pull request will be the upstream repository.
@@ -197,13 +224,13 @@ git pull
 
 Then switch back to your branch and merge main (using a normal three-way merge, *don't* do a rebase merge), resolving any conflicts.
 ``` bash
-git switch ...
+git switch enhance-recipe-[your_github_id]
 git merge main
 ```
 
 Then push your changes back to your fork:
 ``` bash
-git push origin ...
+git push origin enhance-recipe-[your_github_id]
 ```
 
 :::
