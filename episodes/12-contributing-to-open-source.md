@@ -4,7 +4,7 @@ teaching: 15
 exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions
+::: questions
 
 - Should I contribute to an open source project?
 - What does the process of contributing look like?
@@ -12,14 +12,14 @@ exercises: 0
 - What should I do if my contribution is rejected?
 - Are there alternatives to contributing to an open-source project?
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::: objectives
+::: objectives
 
 - Learn how to fork an open source repository.
 - Learn how to open a pull request using a branch on a forked repository.
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 # Contributing to Open Source
 
@@ -35,7 +35,7 @@ While your primary motivations for contributing to a project should be around th
 
 On the other hand, you shouldn't be contributing to a project that you don't use simply because it's popular or you think it will bring attention to your own work.
 
-::::::::::::::::: callout
+::: callout
 
 ## An Example Contribution
 
@@ -51,7 +51,7 @@ Writing the fix took less than half an hour, but likely saved anyone who was wan
 
 The take-away is that even tiny contributions have value and can have lasting impact: a small thing that makes the world a little better.
 
-:::::::::::::::::::::::::
+:::
 
 ## How to Contribute
 
@@ -59,7 +59,7 @@ You should start with an idea of what it is that you need: is it a fix for a bug
 
 Most substantial open source projects have contributor guides.  They will have information about how to set up a development environment, how to run tests, the expectations for code style and quality, the mechanics of how to submit a pull request, and the review process.  You should read the contribution guide and follow its procedures. Many projects will ignore contributions which do not follow the guidelines, and may block people who repeatedly refuse to follow them.
 
-::::::::::::::::: callout
+::: callout
 
 ## AI and Open Source Contributions
 
@@ -71,7 +71,7 @@ As a result many projects have very strict policies about AI use, including many
 
 Make sure that if you want to contribute to a project you follow their guidelines. And even if you are working on a project which permits LLM usage, you will likely get a better reception for your contributions if you write any issues and pull requests yourself: at the end of the day you need to convince a human that your contribution is useful and to do that you need to *engage* with them.
 
-:::::::::::::::::::::::::
+:::
 
 ### Example Repository
 
@@ -230,7 +230,7 @@ In this case, if you were to create your own library which depends on an the gen
 
 Working in this sort of way, you are more likely to get users who are familiar with the open source library you are working with to use your code. And if your algorithm gains popularity and adoption then it will be easier to integrate it into the project you are using later on.
 
-::::::::::::::::: keypoints
+::: keypoints
 
 - be mindful of the constraints that face developers of open source software
 - be clear to yourself on why you want to contribute to an open source project
@@ -239,5 +239,5 @@ Working in this sort of way, you are more likely to get users who are familiar w
 - understand that your vision and the projects visions may not agree, and that contributions may not be accepted
 - consider alternatives to directo contribution to a project
 
-:::::::::::::::::::::::::::
+:::
 
