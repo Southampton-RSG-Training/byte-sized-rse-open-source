@@ -35,7 +35,7 @@ life_cycle: 'pre-alpha' # FIXME
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/Southampton-RSG-Training/byte-sized-rse-script-open-source'
+source: 'https://github.com/Southampton-RSG-Training/byte-sized-rse-open-source'
 
 # Default branch of your lesson
 branch: 'main'
