@@ -132,6 +132,7 @@ The most basic contribution you can make is opening an issue on the project's is
 Before opening an issue, search both the open *and* closed issues to see if there is already an open issue for what you want.  If you are lucky the issue is already resolved and may simply be waiting for a release of the software; or someone has already done the work of reporting the issue.  If you are unlucky the issue may be closed as something that won't be fixed, in which case you should carefully read the reasons and respect the decisions of the maintainers.
 
 If there is an appropriate issue open, you may want to add additional relevant information. For example:
+
 - for a bug, reporting that it happens on another platform, or under different circumstances, or providing more detail about the problem
 - for a feature, adding your use-case or need if it is different from those already being discussed
 
