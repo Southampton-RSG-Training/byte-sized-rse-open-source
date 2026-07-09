@@ -240,6 +240,8 @@ Open source codebases have been extensively used for training language models - 
 
 - LLMs can generate copies of code used in training models when prompted appropriately.  If the copied code is distinctive and substantial enough then that code may be considered a derived work of the original code and subject to copyright and licensing.  At the time of writing courts have ruled that all examples of generated code that have been brought before them have been sufficiently different to not be copyright infringement.  Nevertheless, this is a risk which should be considered when training on open source code.
 
+- allow people a way to control how their code is used by your tools. For example [GitHub allows users to opt out of having their code used for training Copilot](https://github.com/settings/copilot/features). Similarly, if you are scraping websites and repositories, please pay attention to the `robots.txt` file and other best practices for web crawlers.
+
 If you follow the requirements of the licences of any code you train on (for example, including licence text, making available any copyleft source files you may have used, and publishing the model weights and your source code), just as if you would in a regular software project, then your work should be covered by the licensing.
 
 :::::::::::::::::::::::::

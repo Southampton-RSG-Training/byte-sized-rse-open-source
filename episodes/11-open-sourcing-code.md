@@ -29,6 +29,8 @@ To successfully release open source code takes effort and perseverance, and even
 
 So if you want to open source your code, you should be very clear-headed about the reasons you are doing it, put in effort commensurate to your goals, and hope that fortune smiles on you.
 
+You should also confer with your supervisors and collaborators when open sourcing code that contains research results or IP to make sure that everyone is in agreement about it, and understands what the results of doing so will be.
+
 ## Minimal Open Sourcing
 
 The minimum amount of effort to open source your code is to put it in a public repository on a service like GitHub and give it an appropriate licence.
