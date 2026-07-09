@@ -16,7 +16,7 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Understand the legal protections for open source software.
-- Understand the different types of open source licenses.
+- Understand the different types of open source licences.
 - Be able to understand what makes an open source project easy to work with.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -33,17 +33,17 @@ The good news is that open source software is just that: you can get the source 
 
 But there are other ways that you might want to use open source software: perhaps you want to use an open source library in software that you are distributing; perhaps you think your changes might be valuable other people with the same problems that you've run into; perhaps you want to make your code available as open source.
 
-In these cases you need to have an understanding of the licenses that protect open source code, the way that open source communities work, and the mechanics of contributing to someone else's project.
+In these cases you need to have an understanding of the licences that protect open source code, the way that open source communities work, and the mechanics of contributing to someone else's project.
 
 ## How Open Source Works
 
 A common perception is that open source software is "free" in the sense that it doesn't cost anything to use, but also in the sense that you are able to use it however you want.  However most open source software is not *completely* free to use.
 
-Software source code is considered a creative work, and so is protected by copyright as soon as it is written. The only exception is code that has been added to the public domain, either explicitly by the author or by its copyright expiring.  In other words, by default you can't just copy the source code of a program and use it yourself. You need permission from the owner of the copyright to copy the code to your computer and to work with it.  So open source software usually comes with some sort of *license* which describes how you can and can't use it.  These licenses may be simple or complex, and may or may not place obligations on you if you use the source in certain ways.
+Software source code is considered a creative work, and so is protected by copyright as soon as it is written. The only exception is code that has been added to the public domain, either explicitly by the author or by its copyright expiring.  In other words, by default you can't just copy the source code of a program and use it yourself. You need permission from the owner of the copyright to copy the code to your computer and to work with it.  So open source software usually comes with some sort of *licence* which describes how you can and can't use it.  These licences may be simple or complex, and may or may not place obligations on you if you use the source in certain ways.
 
-A license doesn't transfer any ownership rights, and so the copyright holder of a piece of code can choose to license the software in different ways and under different terms if they want to.  For example it is somewhat common for companies to open source their code under a restrictive license and offer a commercial license with less restrictive terms.
+A licence doesn't transfer any ownership rights, and so the copyright holder of a piece of code can choose to licence the software in different ways and under different terms if they want to.  For example it is somewhat common for companies to open source their code under a restrictive licence and offer a commercial licence with less restrictive terms.
 
-This session is going to mostly concentrate on software and software licenses, but there are notions of open source for other types of creative work, often using the Creative Commons licenses, which have many similarities to open source software licenses.  For example, this course itself is open source under a Creative Commons CC-BY 4.0 license.
+This session is going to mostly concentrate on software and software licences, but there are notions of open source for other types of creative work, often using the Creative Commons licences, which have many similarities to open source software licences.  For example, this course itself is open source under a [Creative Commons CC-BY 4.0 licence](https://github.com/Southampton-RSG-Training/byte-sized-rse-open-source/blob/main/LICENSE.md).
 
 ::::::::::::::::: callout
 
@@ -51,7 +51,7 @@ This session is going to mostly concentrate on software and software licenses, b
 
 Copyright isn't the only type of intellectual property that may apply to software.
 
-*Patents* can apply to software, particularly if it is part of a bigger system, and may restrict the ways that a piece of software can be used without separate licensing. Patents have a significantly shorter duration than copyright. Some open source licenses, such as the Apache License 2.0 and GPL 3, have clauses regarding patents.
+*Patents* can apply to software, particularly if it is part of a bigger system, and may restrict the ways that a piece of software can be used without separate licensing. Patents have a significantly shorter duration than copyright. Some open source licences, such as the Apache Licence 2.0 and GPL 3, have clauses regarding patents.
 
 *Trademarks* may apply to open source software and prominent open source projects may have trademark protection.  This may affect how you can present your relationship to the software, how you use logos, and so on.  You may need to take some care when naming your project that it does not conflict with prominent project names: you may be politely asked to change the name of your project.
 
@@ -59,41 +59,42 @@ If you have serious concerns about the intellectual property implications of the
 
 :::::::::::::::::::::::::
 
-## Open Source Licenses
+## Open Source Licences
 
-There are many different open source licenses in use in the thousands upon thousands of open source projects.  The [Open Source Initiative has a list of licenses](https://opensource.org/licenses) that it considers to be "open source", but even then there are open source licenses which don't match the OSI definitions which may still be useful for research code. For example, licenses which restrict commercial use may be acceptable for use in a research setting.
+There are many different open source licences in use in the thousands upon thousands of open source projects.  The [Open Source Initiative has a list of licences](https://opensource.org/licenses) that it considers to be "open source", but even then there are open source licences which don't match the OSI definitions which may still be useful for research code. For example, licences which restrict commercial use may be acceptable for use in a research setting.
 
-But in general, open source licenses fall into a few different general categories in terms of the *requirements* they place on use:
+But in general, open source licences fall into a few different general categories in terms of the *requirements* they place on use:
 
-- **attribution requirements**: a requirement to acknowledge the use of the code, often by including a copy of the license in a file. These sorts of requirements are sometimes called "permissive".
-- **source sharing requirements**: a requirement to distribute or link to source code, usually under the same license as the code. These sorts of requirements are often called "copyleft" or "viral".
+- **attribution requirements**: a requirement to acknowledge the use of the code, often by including a copy of the licence in a file. These sorts of requirements are sometimes called "permissive".
+- **source sharing requirements**: a requirement to distribute or link to source code, usually under the same licence as the code. These sorts of requirements are often called "copyleft" or "viral".
 - **usage restrictions**: some limitation on the ways the code may be used, frequently things like restricting commercial use, or preventing use in ways that they authors find unethical.
 
-In general permissive licenses allow the software to be used as part of a closed source or commercial product.  Copyleft licenses usually prevent use in closed source software.
+In general permissive licences allow the software to be used as part of a closed source or commercial product.  Copyleft licences usually prevent use in closed source software.
 
-And terms of the license may take effect in a number of different ways, such as:
+And terms of the licence may take effect in a number of different ways, such as:
 
 - *distributing* the code, whether source or binary, a stand-alone program, library, or in embedded hardware
 - *running the code on a server* usable by others
 - *using* the code for particular purposes
 
-Most licenses are fairly easy to read, and for the most commonly used licenses there are often guides that give the *intent* of the license.  Even if you are within the letter of the license in what you are doing, breaking the intent of the license may bring negative attention from the people whose work you depend on.
+Most licences are fairly easy to read, and for the most commonly used licences there are often guides that give the *intent* of the licence.  Even if you are within the letter of the licence in what you are doing, breaking the intent of the licence may bring negative attention from the people whose work you depend on.
 
-Common examples of licenses are:
+Common examples of licences are:
 
-- [**BSD**](https://en.wikipedia.org/wiki/BSD_licenses): there are several variations on this, originally used by the "Berkeley Software Distribution" open source Unix. It is used by Python and a large number of Python packages. It is a permissive license.
-- [**MIT**](https://en.wikipedia.org/wiki/MIT_License): a license originally used by networking software released by the Massachusetts Institute of Technology. It is widely used in Javascript libraries. It is a permissive license.
-- [**Apache**](https://en.wikipedia.org/wiki/Apache_License): a license originally used by the Apache web server. It is widely used and is the third most popular open source license. It is generally a permissive license.
-- [**LGPL**](https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License): this is a license which allows permissive use when distributed in unmodified form, but requires publication of modifications.  As a result it can be used in closed source and commercial software.
-- [**GPL**](https://en.wikipedia.org/wiki/GNU_General_Public_License): this is the original copyleft license, originally used by the Free Software Foundation for the GNU unix tools. The GPL version 2 is the license used by Linux and many other prominent projects.  It can be used in servers without sharing code, or called as a separate OS process, but otherwise requires distribution of software which *links* against it to also use the GPL license.
-- [**AGPL**](https://en.wikipedia.org/wiki/GNU_Affero_General_Public_License): this is a variant of the GPL that requires that software on servers that use it provide source and installation instructions for the entire server-side system.  The [Server-Side Public License (SSPL)](https://en.wikipedia.org/wiki/Server_Side_Public_License) is a similar license used by some projects. ElasticSearch, MongoDB and Redis are major projects which use this type of license.
-- [**Creative Commons**](https://creativecommons.org) A collection of licenses intended for general creative works that allow you to pick and choose how permissive or viral you want the license to be. These are sometimes used for software, but are more common for documentation, images and similar content that might be part of a larger project.
+- [**BSD**](https://en.wikipedia.org/wiki/BSD_licenses): there are several variations on this, originally used by the "Berkeley Software Distribution" open source Unix. It is used by Python and a large number of Python packages. It is a permissive licence.
+- [**MIT**](https://en.wikipedia.org/wiki/MIT_License): a licence originally used by networking software released by the Massachusetts Institute of Technology. It is widely used in Javascript libraries. It is a permissive licence.
+- [**Apache**](https://en.wikipedia.org/wiki/Apache_License): a licence originally used by the Apache web server. It is widely used and is the third most popular open source licence. It is generally a permissive licence.
+- [**OGL**](https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/open-government-licence/): the Open Government Licence, used by most UK government publications and source code that is under crown copyright. It is a permissive licence which requires attribution.  By comparison, works of the US government are usually public domain.
+- [**LGPL**](https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License): this is a licence which allows permissive use when distributed in unmodified form, but requires publication of modifications.  As a result it can be used in closed source and commercial software.
+- [**GPL**](https://en.wikipedia.org/wiki/GNU_General_Public_License): this is the original copyleft licence, originally used by the Free Software Foundation for the GNU unix tools. The GPL version 2 is the licence used by Linux and many other prominent projects.  It can be used in servers without sharing code, or called as a separate OS process, but otherwise requires distribution of software which *links* against it to also use the GPL licence.
+- [**AGPL**](https://en.wikipedia.org/wiki/GNU_Affero_General_Public_License): this is a variant of the GPL that requires that software on servers that use it provide source and installation instructions for the entire server-side system.  The [Server-Side Public Licence (SSPL)](https://en.wikipedia.org/wiki/Server_Side_Public_License) is a similar licence used by some projects. ElasticSearch, MongoDB and Redis are major projects which use this type of licence.
+- [**Creative Commons**](https://creativecommons.org) A collection of licences intended for general creative works that allow you to pick and choose how permissive or viral you want the licence to be. These are sometimes used for software, but are more common for documentation, images and similar content that might be part of a larger project.
 
 ::::::::::::::::: callout
 
-### License Example
+### Licence Example
 
-The NumPy license is a permissive "3-clause BSD License":
+The NumPy licence is a permissive "3-clause BSD Licence":
 ```
 Copyright (c) 2005-2025, NumPy Developers.
 All rights reserved.
@@ -127,17 +128,27 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
-The license doesn't promise anything to the users of the code, but does require including the license text when redistributing the software, whether in source or binary form.
+The licence doesn't promise anything to the users of the code, but does require including the licence text when redistributing the software, whether in source or binary form.
 
 :::::::::::::::::::::::::
 
-### Licenses and Industry
+::: callout
+
+### Code With No Licence
+
+Many people believe that if code is published without a licence it is free to use in any manner.  In fact the reverse is true: for over a century in the UK, copyright for creative works is automatic upon creation and lasts for a long time (often the life of the author plus 70 years). Without a licence, the only use of a work is what is permitted by Fair Use/Fair Dealing which are narrow and restrict almost all commercial uses.
+
+Only code which has affirmatively and explicitly been placed in the public domain by the author is clear of copyright and can be used in any manner.  [The Unlicense](https://unlicense.org/) is an example of such a declaration.
+
+:::
+
+### Licences and Industry
 
 In academia licensing is rarely a problem, but in industry, or when thinking of commercialisation opportunities, more care needs to be taken.
 
-When working on projects with industry partners, you may find that they can be very wary about the use of software with copyleft-style open source licenses, particularly when it comes to libraries.  While they are usually fine to use within an organisation, there is the risk that if software using them is given to a third party (such as a customer, contractor or partner) it may require giving them not just the source for the library, but also for proprietary code that uses the library.
+When working on projects with industry partners, you may find that they can be very wary about the use of software with copyleft-style open source licences, particularly when it comes to libraries.  While they are usually fine to use within an organisation, there is the risk that if software using them is given to a third party (such as a customer, contractor or partner) it may require giving them not just the source for the library, but also for proprietary code that uses the library.
 
-On the other hand, when considering commercialisation, some companies will dual-license their code: anyone can use the code if they agree to a copyleft license (which requires them to share any proprietary code if they share their work), but they also offer a more standard paid commercial license without the copyleft provisions.  This permits them to build a community around their software, but also to earn income from other commercial users.
+On the other hand, when considering commercialisation, some companies will dual-licence their code: anyone can use the code if they agree to a copyleft licence (which requires them to share any proprietary code if they share their work), but they also offer a more standard paid commercial licence without the copyleft provisions.  This permits them to build a community around their software, but also to earn income from other commercial users.
 
 ## Using Open Source
 
@@ -146,7 +157,7 @@ If you are planning to incorporate open source software in your work, you should
 Key things you should consider include:
 
 - **fitness for purpose**: does the software actually solve your problem, is it compatible with your operating system and environment. Some experimentation may be needed.
-- **licensing**: is the license compatible with how you intend to use it? For example GPL licensed code may not be suitable for use with a non-GPL licensed project.
+- **licensing**: is the licence compatible with how you intend to use it? For example GPL licensed code may not be suitable for use with a non-GPL licensed project.
 - **maturity**: is the project new and still under active development, or is it mature and mainly having maintenance and bug-fixing work? Mature projects are generally easier to work with and will likely have fewer bugs, but new projects are more likely to accept help and contributions of new features.
 - **documentation**: is there good documentation of how to use the software. If the codebase is small this may not be a major issue, but documentation is always helpful.
 - **code quality**: is the code clean and well-designed. This is one of the advantages of open source software: you can always look at the code.  Are their tests, does the code have a consistent style, do the design choices make sense to you.
@@ -155,17 +166,17 @@ Key things you should consider include:
 
 Other than licensing and fitness of purpose, none of these things are deal-breakers. For example, abandoned code may need a little effort to get it working again, but if it fits your need perfectly then it is likely worth that effort.
 
-When you use open source software in your projects, ensure that you adhere to any license requirements it imposes. In many cases it won't be any. For example if you are writing a Python library with dependencies and the user has to install everything using a package manager like `pip` then you are not "distributing" the dependencies, PyPI is.
+When you use open source software in your projects, ensure that you adhere to any licence requirements it imposes. In many cases it won't be any. For example if you are writing a Python library with dependencies and the user has to install everything using a package manager like `pip` then you are not "distributing" the dependencies, PyPI is.
 
-But if you are distributing a built binary program, application, or hardware, then even with permissive licensing you may have to at least publish acknowledgement in the form required by the license.
+But if you are distributing a built binary program, application, or hardware, then even with permissive licensing you may have to at least publish acknowledgement in the form required by the licence.
 
-Additionally, no matter what the license, you should follow citation guidelines for software: look for `CITATION.cff` files or `DOI` references and use them appropriately.
+Additionally, no matter what the licence, you should follow citation guidelines for software: look for [`CITATION.cff` files](https://citation-file-format.github.io/) or [`DOI` references](https://www.doi.org/the-identifier/what-is-a-doi/) and use them appropriately.
 
 Here are some scenarios to think about:
 
 ::::::::::::::::: challenge
 
-Your project involves building many robots to be given for free to schools to teach computer science. The robots run linux on a single board computer (for example, a Raspberry Pi). What are your obligations under the Linux GPL license?
+Your project involves building many robots to be given for free to schools to teach computer science. The robots run linux on a single board computer (for example, a Raspberry Pi). What are your obligations under the Linux GPL licence?
 
 :::::::::::::::::: solution
 
@@ -184,7 +195,7 @@ You write a mobile application to help with data collection in the field.  The o
 
 :::::::::::::::::: solution
 
-You are using the BSD licensed code internally within your organization, so you are not distributing it and so you do not need to include the BSD license with your application.
+You are using the BSD licensed code internally within your organization, so you are not distributing it and so you do not need to include the BSD licence with your application.
 
 However you should cite the library in any relevant papers about your project.
 
@@ -193,13 +204,13 @@ However you should cite the library in any relevant papers about your project.
 
 ::::::::::::::::: challenge
 
-You write a Python library which has a dependency on a library licensed under the GPL.  Users will normally install your software using a package manager like `pip` or `conda` to download your library and its dependencies.  What are your obligations under the GPL?  What are your *users* obligations under the GPL?
+You write a Python library which has a dependency on a library licensed under the GPL.  Users will normally install your software using a package manager like `pip` or `conda` to download your library and its dependencies.  What are your obligations under the GPL?  What are your *users'* obligations under the GPL?
 
 :::::::::::::::::: solution
 
-Because your users are downloading the GPL library using a package manager, you are not distributing the code yourself and so you have no obligations under the GPL.  You may license your code however you like, including a closed-source proprietary license.
+Because your users are downloading the GPL library using a package manager, you are not distributing the code yourself and so you have no obligations under the GPL.  You may license your code however you like, including a closed-source proprietary licence.
 
-If your *users* distribute software which includes your library and the GPL code (for example in an application) then *they* will likely be bound by the GPL and so their distributed software will be licensed under the GPL.  If your license is not compatible with the GPL (such as a proprietary closed-source license) then they may not be able to distribute their software.
+If your *users* distribute software which includes your library and the GPL code (for example in an application) then *they* will likely be bound by the GPL and so their distributed software will be licensed under the GPL.  If your licence is not compatible with the GPL (such as a proprietary closed-source licence) then they may not be able to distribute the software.
 
 :::::::::::::::::::::::::::
 :::::::::::::::::::::::::::
@@ -210,9 +221,9 @@ You are looking for how to implement a particular algorithm and find a GitHub re
 
 :::::::::::::::::: solution
 
-Because the licenses depend on copyright, they become effective whenever usage goes beyond fair use.  A copying a few lines is probably fine, but a module is likely substantial enough that it is protected by the MIT license terms, and you will have to provide appropriate acknowledgement and include the license for that module.  You can license your code under any compatible license.
+Because the licences depend on copyright, they become effective whenever usage goes beyond fair use.  A copying a few lines is probably fine, but a module is likely substantial enough that it is protected by the MIT licence terms, and you will have to provide appropriate acknowledgement and include the licence for that module.  You can license your code under any compatible licence.
 
-Note that if the code you copied had been GPL licensed you might have needed to license all your code under a GPL-compatible license.
+Note that if the code you copied had been GPL licensed you might have needed to license all your code under a GPL-compatible licence.
 
 :::::::::::::::::::::::::::
 :::::::::::::::::::::::::::
@@ -223,24 +234,28 @@ Note that if the code you copied had been GPL licensed you might have needed to 
 
 Open source codebases have been extensively used for training language models - this is a large part of the reason that they can produce working code.  However there are some legal questions which are still open at the time of writing:
 
-- can code generated by an LLM be copyrighted (and therefore protected by licenses)? In the UK the answer is yes, but the US copyright office guidance is that there should be significant human creative input (more than a single prompt).
+- can code generated by an LLM be copyrighted (and therefore protected by licences)? In the UK the answer is yes, but the US copyright office guidance is that there should be significant human creative input (more than a single prompt).
 
-- an LLM trained on copyrighted material may be considered a derived work.  It is currently an open question about whether training an LLM on copyrighted source code falls under fair use, or whether any licenses on the software also apply to the LLM.  The Free Software Foundation has indicated that [they believe that the copyleft licenses should apply to LLMs trained on copyleft licensed code](https://www.fsf.org/blogs/licensing/2026-anthropic-settlement) and that the model weights and related code should be open-sourced with appropriate licenses.  This has not been tested in court.
+- an LLM trained on copyrighted material may be considered a derived work.  It is currently an open question about whether training an LLM on copyrighted source code falls under fair use/fair dealing, or whether any licences on the software also apply to the LLM.  The Free Software Foundation has indicated that [they believe that the copyleft licences should apply to LLMs trained on copyleft licensed code](https://www.fsf.org/blogs/licensing/2026-anthropic-settlement) and that the model weights and related code should be open-sourced with appropriate licences.  This has not been tested in court.
 
 - LLMs can generate copies of code used in training models when prompted appropriately.  If the copied code is distinctive and substantial enough then that code may be considered a derived work of the original code and subject to copyright and licensing.  At the time of writing courts have ruled that all examples of generated code that have been brought before them have been sufficiently different to not be copyright infringement.  Nevertheless, this is a risk which should be considered when training on open source code.
 
-If you follow the requirements of the licenses of any code you train on (for example, including license text, making available any copyleft source files you may have used, and publishing the model weights and your source code), just as if you would in a regular software project, then your work should be covered by the licensing.
+If you follow the requirements of the licences of any code you train on (for example, including licence text, making available any copyleft source files you may have used, and publishing the model weights and your source code), just as if you would in a regular software project, then your work should be covered by the licensing.
 
 :::::::::::::::::::::::::
+
+## Open Source and IP Concerns
+
+If you have concerns about a particular aspect of IP, licensing, and how it may impact the use of some code in a project, you should in the first instance consult with your PhD supervisor, project lead/manager, or principal investigator with your concerns. In cases where there is uncertainty beyond that, most institutions have units that can help clarify the situation, make a recommendation, or explain institutional policy. For example, the University of Southampton's Research Innovation Services can provide this service, although it is rarely needed in practice.
 
 ::::::::::::::::: keypoints
 
 - open source software is in use everywhere throughout the modern software ecosystem, particularly for research code
 - open source software allows usage of software through licensing of copyright
-- different licenses may impose different obligations
-- "permissive" licenses typically require some sort of acknowledgement of the original authors, but allow use in closed-source code
-- "copyleft" licenses require that software which uses them to also be open source
+- different licences may impose different obligations
+- "permissive" licences typically require some sort of acknowledgement of the original authors, but allow use in closed-source code
+- "copyleft" licences require that derived works (such as software which uses or modifies the original code) to also be open source with a compatible licence
 - assess open source software before using it
-- ensure that you comply with licenses and cite it correctly
+- ensure that you comply with licences and cite code correctly
 
 :::::::::::::::::::::::::::
