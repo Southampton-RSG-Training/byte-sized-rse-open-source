@@ -29,13 +29,16 @@ To successfully release open source code takes effort and perseverance, and even
 
 So if you want to open source your code, you should be very clear-headed about the reasons you are doing it, put in effort commensurate to your goals, and hope that fortune smiles on you.
 
+You should also confer with your supervisors and collaborators when open sourcing code that contains research results or IP to make sure that everyone is in agreement about it, and understands what the results of doing so will be.
+
 ## Minimal Open Sourcing
 
-The minimum amount of effort to open source your code is to put it in a public repository on a service like GitHub and give it an appropriate license.
+The minimum amount of effort to open source your code is to put it in a public repository on a service like GitHub and give it an appropriate licence.
 
-Your choice of license is constrained by the goals you have for your code, but also potentially by your organisation and/or funding.  Make sure that you are clear about this before you release code with a license.
+Your choice of licence is constrained by the goals you have for your code, but also potentially by your organisation and/or funding.  Make sure that you are clear about this before you release code with a licence.
 
-This may be good enough for code associated with a paper that you are unlikely to ever re-use, but that other researchers may need access to in order to replicate your results.  But even for this minimal case, you want to follow best practices and make sure that you include instructions on how to install and use your code, as well as how to cite it.
+This may be good enough for code associated with a paper that you are unlikely to ever re-use, but that other researchers may need access to in order to replicate your results.
+Even for a minimal open-source release a good "README" file is important. For academic code you should make sure that you include a CITATION.cff file so that others can properly cite your work, and when it is reasonably complete, a DOI is also worth considering. See [Zenodo's help](https://help.zenodo.org/docs/github/) on how to get a DOI for your software and how to integrate the process with GitHub releases.
 
 ## Open Sourcing Best Practices
 
@@ -65,7 +68,7 @@ None of these make the maintenance effort go away, but they help manage it, and 
 
 Once you have working, good quality software with tests, you need to start focusing on your potential users. No one will use your code if they don't know what it does, how to install it, or how to use it.  You need user documentation.
 
-The minimum is a "README" file, and for small packages this may be enough.  For larger packages you will want to write documentation with more depth, and for libraries you probably want to also include auto-generated API documentation as a reference.
+The minimum is a "README" file, and for small packages this may be enough.  [RSQKit](https://everse.software/RSQKit/creating_good_readme) has recommendations on best practices for a README file.  For larger packages you will want to write documentation with more depth, and for libraries you probably want to also include auto-generated API documentation as a reference.
 
 The documentation should include a description of what the project's goals are, what it does, how to install it, what its dependencies are, and examples of how to use it.  Documentation should be under version control, and should be able to be automatically built and deployed with minimum effort (ideally as part of continuous integration).  Github and similar systems provide the ability to host a web site associated with a project, and often provide tools for automatic deployment. Other options include [ReadTheDocs](https://about.readthedocs.com/) and self-hosting (either on an institutional or personal site).
 
@@ -75,11 +78,13 @@ It's rare for a project to be successful without some sort of promotion: talks a
 
 The most obvious place to find users and potential collaborators is within your own research community, but if you are doing something of more general interest it may be worth spreading the word more widely. Conferences which are about research software development or scientific software development. For example in the Python software world the PyData, SciPy and EuroSciPy conferences are excellent venues to present your software to a wider audience.  There are corresponding conferences for other languages and ecosystems.
 
-With users comes more work: they will try to use your software in ways that you hadn't anticipated, and which you need, at a minimum, to respond to. But they will also surface bugs you missed and genuine problems with your code. And very occasionally, they will suggest fixes and contribute new features.  You need to be responsive on the issue tracker for the project, even if it is to politely say that you don't want to do something.
+If you are actively trying to build a community of users, you must put in effort to make your code easy to access.  If users have to follow long, fragile sequences of steps to install your software it is likely that they will fail and give up.  Try to make things as easy as possible for your users to install and experiment with. If installation is complex consider writing an install script or packaging everything for use with a package manager; ideally your users should be able to install into their environment with a single command.
+
+With users comes more work: they will try to use your software in ways that you hadn't anticipated, and which you need, at a minimum, to respond to. But they will also surface bugs you missed and genuine problems with your code. And very occasionally, they will suggest fixes and contribute new features.  You need to be responsive on the issue tracker for the project, even if it is to politely say that you don't want to do something. In a very real se
 
 A venue for discussions outside of your issue tracking system may also be useful: a mailing list, discussion board, or wiki may help once your user base grows to more than a few people.
 
-Community also means things like codes of conduct, contribution guides, contributor agreements, and similar.
+Community also means things like codes of conduct, contribution guides, contributor agreements. Initially these can be handled as part of the basic project structure (perhaps in the project README), but if your project gets traction you may find yourself needing to give more detailed guidance.  There are conventions for including this sort of information, such as `CONTRIBUTING.md` and `CODE-OF-CONDUCT.md` files.  In general it is a good idea to have these in place *before* any issues arise.
 
 ::::::::::::::::: keypoints
 

@@ -31,7 +31,12 @@ It is important when thinking about contributing to open source projects to keep
 
 There are many reasons to contribute to open source software projects. Ideally it is because you use the project and want to see it become more useful to you or people that you work with: fewer bugs, more features, easier to use, and so on.  Occasionally it may be OK to contribute to a project that you don't use if there is something specific that you can bring to the table.  For example, if you are managing an open source library that makes an incompatible change you might work with downstream projects to help migrate their code. Contributing can also be a good way to learn things while solving real problems that help others.
 
-While your primary motivations for contributing to a project should be around the goals or subject matter of the project, open source software contributions have a number of secondary benefits. For example your contributions provide a public record of your coding ability and mastery of modern software development processes, which may be useful when applying for a position. Similarly, if the codebase is related to your work, it may be something that you can give as evidence of research-related activities. Working on a project will also help your software development skills more generally—you will hone your skills on writing good code, in finding bugs, writing good tests, and so on—because your work will be being reviewed by more experienced developers who will give you feedback.
+While your primary motivations for contributing to a project should be around the goals or subject matter of the project, open source software contributions have a number of secondary benefits. For example:
+
+- your contributions provide a public record of your coding ability and mastery of modern software development processes, which may be useful when applying for a position.
+- if the codebase is related to your work, it may be something that you can give as evidence of research-related activities
+- contribution in a project closely allied with your research interests may grow into a broader academic collaboration with the authors of the codebase, including joint publications and research grants
+- working on a project will also help your software development skills more generally—you will hone your skills on writing good code, in finding bugs, writing good tests, and so on—because your work will be being reviewed by more experienced developers who will give you feedback.
 
 On the other hand, you shouldn't be contributing to a project that you don't use simply because it's popular or you think it will bring attention to your own work.
 
@@ -57,7 +62,9 @@ The take-away is that even tiny contributions have value and can have lasting im
 
 You should start with an idea of what it is that you need: is it a fix for a bug, a new feature, some documentation? Whatever it is try to have it clear in your head before you start.
 
-Most substantial open source projects have contributor guides.  They will have information about how to set up a development environment, how to run tests, the expectations for code style and quality, the mechanics of how to submit a pull request, and the review process.  You should read the contribution guide and follow its procedures. Many projects will ignore contributions which do not follow the guidelines, and may block people who repeatedly refuse to follow them.
+Most substantial open source projects have contributor guides (frequently in a `CONTRIBUTING.md` file or in project documentation).  They will have information about how to set up a development environment, how to run tests, the expectations for code style and quality, the mechanics of how to submit a pull request, and the review process.  You should read the contribution guide and follow its procedures. Many projects will ignore contributions which do not follow the guidelines, and may block people who repeatedly refuse to follow them.
+
+Similarly, many projects have formal codes of conduct (frequently found in a `CODE-OF-CONDUCT.md` file) which explain the expectations of the community, your responsibilities, and what to do if there is a problem with an interaction you have.
 
 ::: callout
 
@@ -101,7 +108,7 @@ Wikipedia:
 > and which they would be delighted to share with the villager, although it
 > still needs a little bit of garnish, which they are missing, to improve the
 > flavor.
-> 
+>
 > The villager, who anticipates enjoying a share of the soup, does not mind
 > parting with a few carrots, so these are added to the soup. Another villager
 > walks by, inquiring about the pot, and the travelers again mention their
