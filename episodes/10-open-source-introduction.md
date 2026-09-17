@@ -221,7 +221,7 @@ You are looking for how to implement a particular algorithm and find a GitHub re
 
 :::::::::::::::::: solution
 
-Because the licences depend on copyright, they become effective whenever usage goes beyond fair use.  A copying a few lines is probably fine, but a module is likely substantial enough that it is protected by the MIT licence terms, and you will have to provide appropriate acknowledgement and include the licence for that module.  You can license your code under any compatible licence.
+Because the licences depend on copyright, they become effective whenever usage goes beyond fair use/fair dealing.  Copying a few lines is probably fine, but a module is likely substantial enough that it is protected by the MIT licence terms, and you will have to provide appropriate acknowledgement and include the licence for that module.  You can license your code under any compatible licence.
 
 Note that if the code you copied had been GPL licensed you might have needed to license all your code under a GPL-compatible licence.
 
