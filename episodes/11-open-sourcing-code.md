@@ -31,6 +31,8 @@ So if you want to open source your code, you should be very clear-headed about t
 
 You should also confer with your supervisors and collaborators when open sourcing code that contains research results or IP to make sure that everyone is in agreement about it, and understands what the results of doing so will be.
 
+Your project may be able to be published in software-specific journals (such as [The Journal of Open Source Software](https://joss.theoj.org/)).
+
 ## Minimal Open Sourcing
 
 The minimum amount of effort to open source your code is to put it in a public repository on a service like GitHub and give it an appropriate licence.
