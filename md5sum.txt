@@ -11,4 +11,3 @@
 "learners/reference.md" "1c7cc4e229304d9806a13f69ca1b8ba4" "site/built/reference.md" "2026-06-16"
 "learners/setup.md" "bc1c54f34f7e45b6991f3b4ead809a83" "site/built/setup.md" "2026-06-22"
 "profiles/learner-profiles.md" "c25abb2c0fa5ff11c1b5f0ccd997b7be" "site/built/learner-profiles.md" "2026-06-22"
-"slides.podium/slides.md" "26d8f7428ac14b91a80cb4f75fd5d8e0" "site/built/slides.md" "2026-09-17"
